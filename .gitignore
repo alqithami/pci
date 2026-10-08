@@ -1,0 +1,30 @@
+# Local environments, caches, and generated experiment artifacts
+.DS_Store
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+node_modules/
+.toolchain/
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.wtns
+*.zkey
+*.ptau
+*.pt
+*.pth
+*.tar.gz
+*.tar.gz.sha256
+*.zip
+*.zip.sha256
+# These are recreated by the experimental workflows, not source files.
+experiments/**/results/
+experiments/**/validation/
+experiments/**/crypto/build/
+experiments/**/crypto/bin/
+experiments/**/crypto/vendor/
+*.log
