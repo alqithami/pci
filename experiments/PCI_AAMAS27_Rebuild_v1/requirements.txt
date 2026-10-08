@@ -1,0 +1,8 @@
+# Exact versions used for local CPU validation; Python 3.12 recommended on Ubuntu 24.04.
+# Install torch separately from the official CPU wheel index.
+numpy==2.3.5
+scipy==1.17.0
+pandas==2.2.3
+matplotlib==3.10.8
+pytest==9.0.2
+cryptography==46.0.4
