@@ -1,0 +1,17 @@
+domain,layout,baseline,metric,difference,ci_low,ci_high,n_pairs
+rware,small,penalty,throughput,-0.065104166667,-1.171875,1.041666666667,5
+rware,small,penalty,proposed_compliance,-0.005598958333,-0.016145833333,0.003649088542,5
+rware,small,consensus_norm,throughput,-0.423177083333,-1.692708333333,0.846354166667,5
+rware,small,consensus_norm,proposed_compliance,0.001106770833,-0.012662760417,0.01357421875,5
+rware,small,random_norm,throughput,-0.520833333333,-1.725260416667,0.618489583333,5
+rware,small,random_norm,proposed_compliance,-0.00576171875,-0.013704427083,0.00224609375,5
+rware,small,ppo_lagrangian,throughput,0.390625,-0.455729166667,1.107584635417,5
+rware,small,ppo_lagrangian,proposed_compliance,0.057877604167,0.0365234375,0.0744140625,5
+rware,tiny,penalty,throughput,-0.358072916667,-2.473958333333,1.26953125,5
+rware,tiny,penalty,proposed_compliance,0.016959635417,0.009440104167,0.024479166667,5
+rware,tiny,consensus_norm,throughput,2.1484375,1.171875,2.994791666667,5
+rware,tiny,consensus_norm,proposed_compliance,-0.0029296875,-0.014615885417,0.00791015625,5
+rware,tiny,random_norm,throughput,1.432291666667,0.29296875,2.5390625,5
+rware,tiny,random_norm,proposed_compliance,0.004166666667,-0.001920572917,0.011263020833,5
+rware,tiny,ppo_lagrangian,throughput,-1.236979166667,-3.515625,1.009114583333,5
+rware,tiny,ppo_lagrangian,proposed_compliance,0.067024739583,0.0453125,0.09072265625,5

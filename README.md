@@ -4,26 +4,27 @@ Research code for studying **contextual compatibility, operational admissibility
 
 PCI compares action-producing contextual policies on their shared, institutionally relevant effects. A separate admission contract checks concrete operational predicates and binds a certificate to the expected state, action, rule version, and interaction. Low compatibility loss is not a safety certificate; a valid proof is not evidence that the learning mechanism outperforms its baselines.
 
-## Study status — 8 October 2026
+## Study status — audited 8 October 2026
 
 | Study | Evidence status | Scope |
 |---|---|---|
-| **Base rebuild** | Completed and independently audited | 110 learned runs, 12 controller evaluations, three custom warehouse layouts, five training seeds; 96 certified transitions and 288 paired backend measurements. |
-| **Post-audit follow-up** | Running at the last check; full results not released or audited here | 125 planned runs, normalized mechanism controls, an adaptive PPO-Lagrangian comparator, a documented RWARE extension, and longer certified episodes. |
+| **Base rebuild** | Completed and independently audited | 110 learned runs, 12 controller evaluations, three custom layouts and five training seeds; 96 certified transitions and 288 backend measurements. |
+| **Post-audit follow-up** | Completed; statistical reconstruction and saved-SNARK verification passed | 125 learned runs, 36,000 final-policy evaluations, documented RWARE extension and normalized mechanism controls; 12 complete certified episodes, 3,072 transitions and 180 deliveries. |
 
-**The completed base study does not establish a general throughput advantage for PCI over full-action consensus or shuffled maps.** It demonstrates genuine learning, a compliance–throughput trade-off, and functioning bounded transition certification. These findings remain visible rather than being replaced by the follow-up.
+**Findings are condition-dependent, not uniform superiority.** The base study does not establish a general throughput advantage over consensus or shuffled maps. The follow-up finds a throughput gain over normalized consensus and the spectrum-matched nonsemantic control on RWARE tiny, but not over fixed penalties. Custom two doors exhibits a throughput/compliance trade-off; RWARE small does not establish a throughput gain. Nominal RWARE records no quota/capacity violations, making the separate tighter-quota evaluation important. See [completed follow-up findings and audit boundaries](docs/FOLLOWUP_RESULTS.md).
 
-This repository update is a source/documentation release. It does not restart or alter the ongoing experiments. Smoke success, test counts, and planned experiment sizes are not presented as completed follow-up results.
+Every one of the follow-up's 3,216 saved SNARK proofs was independently reverified. These finite checks and full modeled episodes do not establish physical-world security, production reliability, or universal learning benefits. Both studies and their scientific source fingerprints remain separate and unchanged.
 
 ## Repository map
 
-- [`experiments/PCI_AAMAS27_Rebuild_v1`](experiments/PCI_AAMAS27_Rebuild_v1): versioned custom simulator, PPO variants, controllers, Circom generator, Poseidon/snarkjs worker, tests, analysis, and packaging.
-- [`experiments/PCI_AAMAS27_Followup_v1`](experiments/PCI_AAMAS27_Followup_v1): separate post-audit study; depends on the intact base code and, for certification, base checkpoints and cryptographic artifacts.
-- [`results/base_study_20261008`](results/base_study_20261008): audited **presentation extracts**, not the full raw-data archive.
-- [`docs/REVISION_STORY.md`](docs/REVISION_STORY.md): the updated scientific narrative and concern-to-evidence map.
-- [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md): installation, tests, fresh runs, frozen-archive reuse, completion checks, and limitations.
-- [`docs/BASE_RESULTS.md`](docs/BASE_RESULTS.md): completed outcomes and audit scope.
-- [`docs/ARTIFACTS.md`](docs/ARTIFACTS.md): archive identity and which evidence is or is not included in Git.
+- [`experiments/PCI_AAMAS27_Rebuild_v1`](experiments/PCI_AAMAS27_Rebuild_v1): custom simulator, PPO variants, controllers, circuits, cryptographic interfaces, tests, analysis, and packaging.
+- [`experiments/PCI_AAMAS27_Followup_v1`](experiments/PCI_AAMAS27_Followup_v1): separate post-audit study, importing the intact base code and its frozen checkpoints/circuit artifacts for certification.
+- [`results/base_study_20261008`](results/base_study_20261008): audited base presentation extracts, not full raw evidence.
+- [`results/followup_20261008`](results/followup_20261008): audited follow-up presentation extracts and audit counts; full raw archive remains author-held.
+- [`docs/REVISION_STORY.md`](docs/REVISION_STORY.md): updated scientific narrative and concern-to-evidence map.
+- [`docs/REPRODUCIBILITY.md`](docs/REPRODUCIBILITY.md): installation, tests, fresh runs, frozen-archive reuse and completion checks.
+- [`docs/BASE_RESULTS.md`](docs/BASE_RESULTS.md) and [`docs/FOLLOWUP_RESULTS.md`](docs/FOLLOWUP_RESULTS.md): separate measured outcomes and limitations.
+- [`docs/ARTIFACTS.md`](docs/ARTIFACTS.md): archive identities and availability.
 
 ## Start with a source check, not a full training run
 
@@ -33,30 +34,26 @@ cd pci
 python3 scripts/verify_sources.py
 ```
 
-The verifier uses only Python's standard library. It checks every manifest-listed versioned source file and detects unlisted files in the exported source directories. It does not certify the mathematics, train a model, or verify SNARK proofs.
-
-Use the [reproduction guide](docs/REPRODUCIBILITY.md) to install the appropriate dependencies and run the 57 base Python tests or 29 follow-up Python tests. Cryptographic integration is a separate, explicit check. The full suites consume substantial compute and are never launched by cloning or by the source verifier.
+The standard-library verifier checks manifest-listed scientific source files and detects unlisted files in exported source directories. It does not train models, assess scientific claims or verify proofs. See the reproduction guide for the 57 base and 29 follow-up Python tests and the separate genuine cryptographic preflight. Cloning and source verification never start the expensive suites.
 
 ## What is implemented
 
-**Base learning:** task-only PPO, fixed-penalty PPO, full-action consensus, typed-overlap PCI, shuffled-map PCI, and a parameter-matched pooled-state actor. Four additional controllers implement specified rule, reservation-auction, broadcast-consensus, and centralized-priority procedures. These custom controllers are not claimed to reproduce entire published algorithms or provide optimality upper bounds.
+**Base learning:** task-only PPO, fixed penalties, full-action consensus, PCI typed overlaps, shuffled maps and a parameter-matched pooled-state actor. Four additional controllers implement specified rule, reservation-auction, broadcast-consensus and centralized-priority procedures. They are custom operational comparators, not optimality upper bounds or wholesale reproductions of named published algorithms.
 
-**Follow-up learning:** fixed penalties, trace-normalized consensus, normalized PCI, a spectrum-matched nonsemantic projection control, and empirical-rate PPO-Lagrangian with reward/cost critics. The normalized objective and adaptive comparator are new follow-up variants, not retrospective replacements for the base study. The comparator is a documented adaptation, not an exact MACPO/MAPPO-Lagrangian reproduction.
+**Follow-up learning:** fixed penalties, normalized consensus, normalized PCI, spectrum-matched nonsemantic projections, and an empirical-rate PPO-Lagrangian adaptation with reward/cost critics. The new objective and comparator do not retroactively replace base outcomes. PPO-Lagrangian here is not an exact MACPO/MAPPO-Lagrangian reproduction.
 
-**Certificates:** genuine Groth16 and PLONK operational-transition proofs, plus Ed25519 authenticated disclosure with predicate reevaluation. Circuits recompute movement, floor membership, collisions, swaps, aggregate capacity, quotas, ranges, and commitments. Expected public signals and replay prevention are checked before admitted execution.
+**Certificates:** genuine Groth16 and PLONK transition proofs, plus measured Ed25519 authenticated disclosure with predicate reevaluation. Circuits recompute movement, floor membership, collisions, swaps, aggregate capacity, quotas, ranges and commitments. Expected public signals and replay prevention are checked before admitted execution. Ed25519 signature bytes were not archived for independent post-run replay, unlike the saved SNARK proofs.
 
 ## Boundaries that matter
 
-The custom environment and RWARE remain warehouse task families. RWARE uses native dynamics with explicitly added common task/map features, shaping, and institutions; these are not unmodified RWARE leaderboard scores. The custom circuit does **not** certify RWARE.
+Both environment families remain warehousing. RWARE retains native dynamics with documented common task/map features, shaping and institutions; these are not unmodified leaderboard scores. The custom circuit does not certify RWARE. The simulator/state authority and executor are trusted. The joint prover sees the witness; privacy is relative to an external auditor.
 
-The simulator/state authority and executor are trusted. The joint prover sees the multi-agent witness; privacy is relative to an external auditor. No claim is made of physical sensor authenticity, continuous-motion safety, malicious-secure multiparty proving, policy-inference proofs, learned institutional maps, higher-order cohomological detection, dynamic churn, or recursive proofs.
-
-Detailed [threat model](experiments/PCI_AAMAS27_Rebuild_v1/docs/THREAT_MODEL.md) and [follow-up protocol](experiments/PCI_AAMAS27_Followup_v1/docs/PROTOCOL.md) accompany the source.
+No physical sensor authenticity, continuous-motion safety, malicious-secure multiparty proving, policy-inference proofs, learned institutional maps, higher-order cohomological detection, dynamic churn or recursive proofs are claimed. Read the [threat model](experiments/PCI_AAMAS27_Rebuild_v1/docs/THREAT_MODEL.md) and [follow-up protocol](experiments/PCI_AAMAS27_Followup_v1/docs/PROTOCOL.md).
 
 ## Provenance and licensing
 
-The experiment directories preserve the supplied versioned scientific source bytes. Repository-level guidance and manifests are packaging additions. Installation-generated dependency locks and heavy artifacts are not reconstructed from memory: see [artifact availability](docs/ARTIFACTS.md).
+Scientific sources are preserved; repository-level summaries/manifests are packaging additions. Presentation CSVs are rounded extracts. Full archives, checkpoints, installed lockfiles and heavy cryptographic artifacts are not uploaded as release assets in this update; their identities and current availability are explicit in ARTIFACTS.md.
 
-The original protocol uses the word “preregistered” in its historical heading. This release describes it as **prespecified**; no independent registry entry is supplied. The follow-up was specified after inspecting the base outcomes and is explicitly post-audit.
+The historical base protocol uses “preregistered” in its heading. This release describes it as prespecified; no independent registry entry is supplied. The follow-up was designed after inspecting base outcomes and remains explicitly post-audit.
 
-No new license is assigned by this update. See [NOTICE.md](NOTICE.md). Manuscript drafts, review exports, credentials, host-specific connection instructions, and private operational logs are not included.
+No new license is assigned. See [NOTICE.md](NOTICE.md). Manuscript drafts, confidential reviews, credentials, private connection settings and operational account logs are excluded. This author-identified repository is not an anonymized review artifact.

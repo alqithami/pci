@@ -1,0 +1,13 @@
+n_agents,checkpoint_seed,regime,deliveries,proposed_compliance,executed_compliance,action_replacements
+2,0,nominal,10,0.99609375,1,2
+2,0,rule_shift,11,0.99609375,1,2
+2,1,nominal,6,0.99609375,1,2
+2,1,rule_shift,6,0.9921875,1,4
+4,0,nominal,16,0.890625,1,55
+4,0,rule_shift,13,0.88671875,1,56
+4,1,nominal,12,0.9453125,1,27
+4,1,rule_shift,14,0.94921875,1,28
+8,0,nominal,22,0.65625,1,176
+8,0,rule_shift,25,0.7109375,1,155
+8,1,nominal,23,0.6953125,1,167
+8,1,rule_shift,22,0.703125,1,160
