@@ -1,0 +1,9 @@
+# Blinded-action functional-validation source
+
+These four scripts preserve the source used to prepare and validate the separate two-agent action-opening variant. `SOURCE.sha256` covers the four scripts, not this repository guide. The original benchmark circuits are not edited: the preparer checks their exact source hashes, creates a new directory, adds a private field opening to the action commitment, and changes its commitment domain from 1002 to 1004. State blinding is retained; public institutional rules remain public.
+
+The original execution passed 21 genuine circuit checks and ten opening/binding checks under Groth16 and PLONK. Its final marker, `CRYPTO_SMOKE_COMPLETE_NOT_BENCHMARKED`, means functional validation only. The known openings 4001 and 4002 are test fixtures, not secure randomness for deployment or a privacy experiment. `check_host_variant.py` uses an explicitly labelled serialization test double; it must not be substituted for `check_real_binding.py` or the genuine circuit tests.
+
+The later [post-submission benchmark](../PCI_Postsubmission_Certified_v1/) copies this variant into another isolated directory, generates new keys for 2/4/8 agents, samples private openings using the operating system, and runs matched frozen-policy episodes. Its outcomes are pending; old latency measurements are not results for the changed circuit.
+
+See [post-submission reproduction](../../docs/POSTSUBMISSION_REPRODUCIBILITY.md) for dependency restoration and environment-variable usage. The source clone does not include the original checkpoints, transitive dependency locks, or heavy proof artifacts. Do not invoke the preparer or validation script against an existing experiment directory. Successful finite tests do not establish application-level trajectory confidentiality, sensor authenticity, or a formal circuit-security proof.

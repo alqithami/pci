@@ -26,3 +26,13 @@ experiments/**/validation/
 experiments/**/crypto/build/
 experiments/**/crypto/bin/
 experiments/**/crypto/vendor/
+# Local generated replicas and runtime records are not released scientific source.
+experiments/PCI_Postsubmission_Certified_v1/variant/
+experiments/PCI_Postsubmission_Certified_v1/PREPARATION.json
+experiments/PCI_Postsubmission_Certified_v1/bundle_manifest.json
+# These outputs are deterministically regenerated from the committed nominal counts.
+analysis/nominal_sensitivity_20261009/data/reanalysis/nominal_sensitivity.csv
+analysis/nominal_sensitivity_20261009/data/reanalysis/nominal_seed_means.csv
+analysis/nominal_sensitivity_20261009/data/reanalysis/nominal_paired_seeds.csv
+analysis/nominal_sensitivity_20261009/data/reanalysis/STATISTICAL_SENSITIVITY_REPORT.json
+analysis/nominal_sensitivity_20261009/checks/SENSITIVITY_CHECK_REPORT.json

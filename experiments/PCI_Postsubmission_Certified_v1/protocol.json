@@ -1,0 +1,101 @@
+{
+  "study": "PCI post-submission blinded-action and cross-policy certification v1",
+  "status": "Post-submission follow-up; not evidence available at the original submission",
+  "methods": [
+    "pci",
+    "ppo_penalty",
+    "consensus"
+  ],
+  "training_seeds": [
+    0,
+    1,
+    2,
+    3,
+    4
+  ],
+  "populations": [
+    2,
+    4,
+    8
+  ],
+  "regimes": [
+    "nominal",
+    "quota_tight",
+    "rule_shift"
+  ],
+  "episodes_per_cell": 2,
+  "horizon": 256,
+  "quota_window": 64,
+  "layout": "twodoors",
+  "evaluation_seeds": [
+    710001,
+    710002
+  ],
+  "order_seed": 710009,
+  "backends": [
+    "groth16",
+    "plonk",
+    "signed_assertion",
+    "signed_disclosure"
+  ],
+  "paired_steps": [
+    0,
+    16,
+    32,
+    48,
+    62,
+    63,
+    64,
+    65,
+    80,
+    96,
+    112,
+    126,
+    127,
+    128,
+    129,
+    144,
+    160,
+    176,
+    190,
+    191,
+    192,
+    193,
+    224,
+    255
+  ],
+  "full_episodes": 270,
+  "certified_transitions": 69120,
+  "paired_records": 6480,
+  "backend_measurements": 88560,
+  "saved_snark_proofs": 75600,
+  "primary_operational_endpoints": [
+    "deliveries_per_1000_joint_steps",
+    "institutional_agent_replacements_per_1000_agent_decisions"
+  ],
+  "secondary_endpoints": [
+    "proposal_compliance",
+    "physical_corrections",
+    "changed_joint_steps",
+    "paired_generation_and_verification_cost",
+    "admission_wall_time",
+    "executed_compliance"
+  ],
+  "analysis": "Compare within-population/regime seed means after averaging the two matched evaluation episodes. Retain all five training seeds. Paired t intervals, descriptive percentile bootstrap, and exhaustive two-sided sign-flip sensitivity; Holm on 36 primary tests (3 populations x 3 regimes x 2 comparators x 2 endpoints). Fixed old checkpoints are exploratory, not 20-30 new training seeds. No test-driven tuning.",
+  "record_blinding": "OS-random field openings for state and action; action domain 1004. Nonces are public and are not the blinding secret. Rules remain public.",
+  "timing": "One sequential prover worker on at most six CPU cores; four backend permutations balanced exactly over 24 points in every full episode. Record shared-host load. Not comparable as controlled hardware speedup over old runs. Whole episode time includes all four sampled backends and postprocessing, not Groth16-only execution.",
+  "boundaries": [
+    "Trusted state authority and executor; no sensor authentication or crash-persistent ledger.",
+    "No RWARE proofs or policy-inference proofs.",
+    "Disclosure views intentionally reveal witness data; do not combine them with the SNARK-only view in a privacy claim.",
+    "Private witness files are synthetic reproducibility artifacts, not auditor-visible inputs.",
+    "Negative tests and distinct commitments are functional evidence, not a general privacy theorem.",
+    "New circuit keys and costs cannot be attributed retrospectively to the original studies."
+  ],
+  "frozen_archives": {
+    "base": "bc7044ba38edea7fb580c51a1228e56ea403ed18091a09a9e86b374c7f88d381",
+    "followup": "45f52edf232c6162fba4d6e3168ef02e4c12cb0abd53c46a4b73b5f8f9998708"
+  },
+  "disk_stop_free_gib": 8,
+  "cpu_core_cap": 6
+}

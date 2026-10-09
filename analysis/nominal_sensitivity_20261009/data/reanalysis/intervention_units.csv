@@ -1,0 +1,13 @@
+case,agents,joint_steps,changed_joint_steps,replaced_agent_actions,agent_decisions,deliveries
+n2_s0_nominal,2,256,1,2,512,10
+n2_s0_rule_shift,2,256,1,2,512,11
+n2_s1_nominal,2,256,1,2,512,6
+n2_s1_rule_shift,2,256,2,4,512,6
+n4_s0_nominal,4,256,28,55,1024,16
+n4_s0_rule_shift,4,256,29,56,1024,13
+n4_s1_nominal,4,256,14,27,1024,12
+n4_s1_rule_shift,4,256,13,28,1024,14
+n8_s0_nominal,8,256,88,176,2048,22
+n8_s0_rule_shift,8,256,74,155,2048,25
+n8_s1_nominal,8,256,78,167,2048,23
+n8_s1_rule_shift,8,256,76,160,2048,22

@@ -1,8 +1,8 @@
-# Completed PCI follow-up: audited outcomes
+# Completed learning follow-up: outcomes and statistical sensitivity
 
-The separate post-audit follow-up finished at **2026-10-08T08:46:26Z**. This release records completed evidence, not planned sample sizes. The original base study and all versioned scientific sources remain unchanged.
+The learning follow-up finished at **2026-10-08T08:46:26Z**. Its observations and source are unchanged. This page now incorporates the later statistical and public-input interpretation corrections; it contains no outcomes from the running blinded-action cross-policy benchmark.
 
-## Archive and independent checks
+## Archive and check scope
 
 `PCI_followup_results.tar.gz`, 532,707,227 bytes, SHA-256:
 
@@ -10,31 +10,27 @@ The separate post-audit follow-up finished at **2026-10-08T08:46:26Z**. This rel
 45f52edf232c6162fba4d6e3168ef02e4c12cb0abd53c46a4b73b5f8f9998708
 ```
 
-The server checksum and the copied archive checksum agree. A separate streaming checker rehashed all **18,663 manifest-listed payloads**, with no hash mismatches, missing/unlisted payloads, duplicate member names, or unsafe paths. The full raw archive remains author-held; it is not uploaded as a GitHub release asset in this update.
+The server and copied archive checksums agree. All 18,663 manifest-listed payloads passed a separate streaming hash check. A separate reconstruction checked per-run configurations, checkpoint identities, evaluation schemas, seed coverage, actual-delivery arithmetic, per-agent totals, finite metrics and actor updates. The original 1,680 paired and 2,100 condition intervals reproduced to absolute tolerance 1e-12 using the recorded 5,000 bootstrap draws and seed 92170.
 
-An independently written reconstruction checked all per-run configurations, checkpoints, evaluation schemas and seed coverage, actual-delivery arithmetic, per-agent totals, finite metrics and nonzero actor updates. Run means and all **1,680 paired intervals and 2,100 condition intervals** reproduce the original export to absolute tolerance 1e-12. The original bootstrap settings remain 5,000 draws, seed 92170, and five independent training seeds.
-
-| Evidence | Verified count |
+| Evidence | Count |
 |---|---:|
-| Learned runs / held-out policy evaluations | 125 / 125 |
+| Learned policies / final-policy episodes | 125 / 36,000 |
 | Joint training steps | 32,768,000 |
 | Update rounds / optimizer steps | 32,000 / 1,024,000 |
-| Final-policy / checkpoint-evaluation episodes | 36,000 / 5,000 |
+| Checkpoint-evaluation episodes | 5,000 |
 | Zero-delivery evaluation episodes retained | 1,945 |
-| Certified episodes / transitions | 12 / 3,072 |
+| Original-protocol certified episodes / transitions | 12 / 3,072 |
 | Backend measurements / saved SNARK proofs | 3,360 / 3,216 |
 | Certified delivery events | 180 |
 | Counter resets / rule-version changes checked | 36 / 6 |
 
-Every saved Groth16 and PLONK proof was independently reverified with the unchanged keys. A separate implementation recomputed Poseidon state/action/rule bindings and checked the public ABI against the expected record. An independent scalar checker assessed geometry, movements, collisions, swaps, aggregate capacities, quotas and state continuity on all 3,072 certified transitions. Six fresh public-input tamper checks were rejected.
+All saved Groth16 and PLONK proofs were reverified with unchanged keys and separately recomputed bindings. A scalar checker assessed movement, collisions, aggregate capacities, quotas and state continuity over all certified transitions. Six fresh public-input tamper checks failed as expected. These are internal artifact checks using the same cryptographic libraries, not independent retraining or a formal security audit. Ed25519 signature bytes were not retained for independent replay.
 
-This is not a new training replication, exhaustive policy replay, or a cryptographic security proof. Ed25519 signature bytes were not archived and were not independently replayed; their timing results remain producer-recorded measurements with archive integrity.
+## Original nominal outcomes remain visible
 
-## Primary learning findings
+Institutional admission is disabled in these nominal four-agent learning comparisons; shared physical conflict resolution remains active. Throughput counts actual deliveries per 1,000 joint steps. Evaluation episodes first average within each trained seed.
 
-Nominal four-agent evaluation has institutional admission disabled. Throughput counts actual deliveries per 1,000 joint steps, not shaping reward. Each mean averages episodes within each of five training seeds before averaging seeds. The data directory retains every method and configuration.
-
-| Configuration | Normalized PCI minus normalized consensus throughput | Pointwise 95% paired interval |
+| Configuration | PCI minus normalized consensus throughput | Original pointwise bootstrap interval |
 |---|---:|---:|
 | Custom open | -1.82 | [-7.49, 4.49] |
 | Custom two doors | -4.07 | [-7.52, -0.94] |
@@ -42,27 +38,31 @@ Nominal four-agent evaluation has institutional admission disabled. Throughput c
 | RWARE tiny | 2.67 | [1.76, 3.58] |
 | RWARE small | -0.36 | [-1.46, 0.75] |
 
-On RWARE tiny, normalized PCI obtains 13.80 deliveries/1,000 steps, compared with 11.13 for normalized consensus and 12.14 for the spectrum-matched nonsemantic control. Its paired gains are 2.67 [1.76, 3.58] and 1.66 [0.23, 3.32]. The contrast against fixed penalties is 0.16 [-2.25, 1.76], so improvement over that simpler comparator is not established. Nominal compliance is 99.834% for PCI and 99.893% for consensus; the favorable throughput comparison is not universal dominance.
+RWARE-tiny mean throughput is PCI 13.80, consensus 11.13, rotation 12.14, fixed penalty 13.64 and adaptive PPO-Lagrangian 15.07. PCI versus fixed penalties is 0.16 [-2.25, 1.76] under the original bootstrap. Custom two doors trades lower throughput for 1.66 [0.15, 2.80] percentage points of higher compliance. RWARE-small does not establish a throughput advantage. These measured differences are not uniform superiority, and an interval containing zero is not equivalence.
 
-Custom two doors shows a trade-off: PCI loses 4.07 [-7.52, -0.94] deliveries relative to consensus while gaining 1.66 percentage points [0.15, 2.80] of proposed compliance. RWARE small does not establish a throughput advantage over any comparator. Its unfavorable compliance comparison against fixed penalties is also retained.
+The adaptive comparator has higher compliance and lower throughput on the custom layouts. On RWARE it has higher mean tiny throughput but lower joint proposal compliance; across-seed composite cost means are about 0.0144/0.0159 on tiny/small. Its target 0.02 is an averaged composite agent-step cost, not a 2% joint-action failure bound. The recorded RWARE multipliers did not saturate the cap 10. Means below the target do not guarantee satisfaction for every seed or update.
 
-The adaptive PPO-Lagrangian comparator has higher compliance and lower throughput on the custom layouts. Its mean cost rates are 0.0137, 0.0196 and 0.0126 (open/two doors/staggered), compared with PCI's 0.0428, 0.0365 and 0.0409. The configured cost target is 0.02. Across-seed means are not per-iteration guarantees; more throughput at greater cost is not dominance over the constrained objective.
+## Complete-family sensitivity changes the strength of inference
 
-All intervals are exploratory and pointwise, not multiplicity-adjusted. Five seeds remain five independent training repetitions. An interval containing zero is not an equivalence result.
+The [reproducible reanalysis](../analysis/nominal_sensitivity_20261009/) uses exact nominal counts for all 125 policies, representing 3,000 held-out episodes. It preserves the original bootstrap and adds paired-t intervals, exhaustive sign-flip tests and separate Holm corrections across five configurations, four comparators and two endpoints: **40 comparisons**.
 
-## Constraint exposure is an essential qualification
+Neither adjusted family contains p<0.05. On RWARE-tiny, the rotation throughput difference 1.66 has paired-t interval [-0.75, 4.07], compared with bootstrap [0.23, 3.32]. The consensus difference 2.67 has paired-t interval [1.21, 4.12], unadjusted t p=0.0070, exhaustive sign-flip p=0.0625, and Holm-adjusted t p=0.2592. The favorable original intervals therefore remain exploratory rather than confirmatory evidence of semantic advantage.
 
-All **1,200 nominal unshielded RWARE episodes** have zero logged quota violations and capacity excess, and their admitted counterparts have zero institutional replacements. Near-perfect nominal compliance is therefore not evidence of resolving active quota/capacity violations. The metric also includes physical wall/conflict attempts.
+Paired-t and sign-flip procedures require different assumptions; sharing a seed establishes neither normal differences nor exchangeability. Five seeds, not 3,000 episodes or 5,000 bootstrap resamples, determine training replication. The one fixed rotation and unequal realized gradient strength remain attribution limits. The analysis is a later sensitivity check, not a retroactive preregistration.
 
-The tighter-quota scenario produces **6,624 unshielded agent-step quota violations** across the RWARE methods/layouts. This is an exposure count, not 6,624 episodes. Under tight quotas on tiny, PCI's throughput differences are 2.15 [1.17, 2.99] versus consensus and 1.43 [0.29, 2.54] versus the rotation control. Against fixed penalties, throughput is -0.36 [-2.47, 1.27] and compliance improves by 1.70 percentage points [0.94, 2.45]. Small again does not establish throughput gains.
+## Rule exposure
 
-RWARE retains native dynamics with explicitly added common task/map features, shaping and institutional rules. It is independent implementation evidence within warehousing, not a second real-world domain or unmodified benchmark score. RWARE limits region entries; the custom simulator limits standing occupancy. Intervention fields have different scopes and are not pooled as identical measures.
+All 1,200 nominal unshielded RWARE episodes have zero recorded quota violations and capacity excess, with zero additional institutional replacements in their admitted counterparts. Near-perfect nominal proposal compliance chiefly reflects the remaining physical-attempt metric, not resolution of active quota/capacity conflicts.
 
-## Complete certified episodes
+Tight-quota RWARE instead records 6,624 unshielded agent-step quota violations. On tiny, the original throughput differences are 2.15 [1.17, 2.99] versus consensus and 1.43 [0.29, 2.54] versus rotation. Against fixed penalties, throughput is -0.36 [-2.47, 1.27] and compliance improves by 1.70 [0.94, 2.45] percentage points. These are secondary exploratory outcomes, not substitute primary tests.
 
-Frozen base PCI checkpoints at seeds 0 and 1 execute twelve 256-step episodes across 2/4/8 agents and nominal/rule-shift regimes. Every transition receives a fresh Groth16 proof before execution. All episodes deliver tasks, 6–25 each and 180 total, with modeled executed compliance one. All 36 quota resets and six rule-version changes are checked.
+RWARE uses native dynamics plus documented common task/map features, shaping and institutions. It is not an unmodified benchmark or a non-warehouse domain. RWARE limits entries while the custom simulator limits standing occupancy; intervention fields should not be pooled as identical measures.
 
-At 144 fixed paired records, each backend measures the same record and all six protocol orders are balanced within each episode. Use the paired subset (48 records per population per backend) for protocol comparisons:
+## Original-protocol certified episodes and privacy boundary
+
+Frozen base PCI checkpoints 0/1 execute twelve complete 256-step episodes at 2/4/8 agents under nominal and rule-shift conditions. Each transition receives Groth16 admission. Episodes deliver 6–25 tasks each, totaling 180, with modeled executed compliance one. These are transition proofs across episodes, not recursive episode proofs.
+
+On 144 fixed paired records, the three backends are measured in balanced six-way order. There are 48 paired samples per population/backend:
 
 | Agents | Groth16 generation / verification (ms) | PLONK generation / verification (ms) |
 |---|---:|---:|
@@ -70,12 +70,12 @@ At 144 fixed paired records, each backend measures the same record and all six p
 | 4 | 316.52 / 9.32 | 14,247.57 / 11.46 |
 | 8 | 450.41 / 12.44 | 14,364.07 / 11.69 |
 
-Generation includes witness computation and proving for SNARKs. Ed25519 signs a disclosed record and reevaluates its predicate; it has different functionality. The larger all-transition Groth16 sample has slightly different medians and is not mixed with the paired protocol table. Full episode wall time includes sampled additional backends and is not Groth16-only time.
+SNARK generation includes witness computation and proving. Signature generation and disclosed predicate reevaluation supply different assurance/disclosure. Episode wall time includes sampled additional backends and is not Groth16-only time. No high-frequency real-time claim follows.
 
-This is stronger modeled-episode integration evidence than the base 32-step sequences. It retains trusted state/executor and joint-prover assumptions. There is no RWARE circuit, policy-inference proof, sensor-authenticity guarantee, multiparty private proving, recursive episode proof, or high-frequency real-time claim.
+Original replacements count agent decisions, including physical correction: at eight agents, 155–176 of 2,048 decisions are replaced (7.57–8.59%). The separately counted 74–88 affected joint steps represent 28.91–34.38% of the episode. [Case-level denominators are included.](../analysis/nominal_sensitivity_20261009/data/reanalysis/intervention_units.csv)
 
-## Release scope and conclusion
+**These measurements do not establish trajectory confidentiality.** The original zero-salt action commitments are enumerable over small public action spaces. Known initial state and recovered movement can expose subsequent positions. This is leakage from the public statement, not a break of SNARK zero knowledge. The later private-action-opening repair needs its own keys, tests, timing and privacy analysis. The current [post-submission benchmark](POSTSUBMISSION_REPRODUCIBILITY.md) is separate and pending; none of its planned totals replace this table.
 
-The [follow-up data](../results/followup_20261008/) are rounded presentation extracts, not full raw data. Complete full-precision audit tables and helpers remain with the verified author-held artifacts. The source code and original follow-up protocol are unchanged.
+## Availability
 
-The supported narrative is **condition-dependent benefits of selective compatibility, together with independently checked full-episode institutional execution**. The results do not establish uniform learning superiority. The original base study remains separate and visible; further theory, references and manuscript-readiness review must not be inferred from successful experiment execution.
+The existing [follow-up CSVs](../results/followup_20261008/) remain unchanged rounded presentation extracts. Exact sufficient statistics and unchanged sensitivity scripts are now available for the complete nominal family. Full original episode rows, checkpoints, proof archives and transitive dependency locks remain author-held, with identities in [ARTIFACTS.md](ARTIFACTS.md). No public raw-archive URL is claimed.

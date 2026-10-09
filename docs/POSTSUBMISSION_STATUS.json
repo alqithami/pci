@@ -1,0 +1,22 @@
+{
+  "study": "PCI_Postsubmission_Certified_v1",
+  "checked_at_utc": "2026-10-09T18:17:42Z",
+  "scope": "Read-only source identity, controller and progress check; no interim scientific-result publication",
+  "stage": "FULL_BENCHMARK_ACTIVE",
+  "full_stage_started_utc": "2026-10-09T13:42:15Z",
+  "controller_active": true,
+  "completed_full_episodes_at_check": 27,
+  "planned_full_episodes": 270,
+  "source_checksum_checks_passed": 6,
+  "prior_launch_gates": {
+    "host_protocol_checks_passed": 19,
+    "host_oracle_transitions": 2304,
+    "real_crypto_assurance_checks_passed": 67,
+    "smoke_cases_completed": 9
+  },
+  "full_results_released": false,
+  "new_policy_training_started_by_this_controller": false,
+  "gpu_training_started_by_this_controller": false,
+  "final_marker_required": "POSTSUBMISSION_FULL_BENCHMARK_ARCHIVE_VERIFIED",
+  "note": "Historical snapshot, not a live feed. Individual case completion is not whole-study completion. Final archive and analysis must be checked separately."
+}

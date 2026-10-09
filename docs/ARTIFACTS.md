@@ -1,20 +1,16 @@
-# Artifact identity, availability, and source preservation
+# Artifact identities and release boundaries
 
-## Included in this repository
+## Included source and data
 
-Two versioned scientific source directories, execution protocols, tests, circuit generation/verification and analysis/packaging tools. Separate base and follow-up directories contain audited **presentation extracts**, not full raw results. Follow-up audit counts and interpretation are now included.
+The two original experiment directories retain their 52 scientific source files and original repository manifests (35 base, 17 follow-up). The new release adds the exact seven-file post-submission package, four exact blinded-action preparation/validation scripts, and the completed nominal sensitivity analysis's scripts and sufficient statistics. Repository-level guides, status snapshots and additional checksum manifests are packaging additions, not edits to an active scientific run.
 
-The source export manifests cover 35 base files and 17 follow-up files. They exclude manuscript drafts, private deployment notes, installed dependency locks and heavy artifacts. Each listed scientific source preserves its supplied source-package bytes. This results/documentation update does not modify those files or their manifests.
-
-The follow-up source digest, including its protocol and the 15 imported base Python modules, is:
+Existing result CSVs remain unchanged rounded presentation extracts. The new `analysis/nominal_sensitivity_20261009/` inputs are exact event totals for 125 nominal policies and separate certified-intervention counts, not the complete raw archive. They reproduce all 40 nominal endpoint comparisons without training. The integer count JSON is whitespace-compacted but has the same canonical digest as the final supplement:
 
 ```
-ba8d57b73079993a77269e357094e4d7c23694b16a392f0ccc1be9dc4ca79b5e
+91c68f761cdc483beddf1622b36e70e91fca91314557126af0a25baf77531524
 ```
 
-The standard-library verifier reconstructs that fingerprint; it is not a Git commit ID or the complete base-run fingerprint.
-
-## Completed full base archive — author-held, not uploaded here
+## Completed full base archive — not uploaded here
 
 ```
 Filename: PCI_deadline_results.tar.gz
@@ -24,9 +20,9 @@ Manifest-listed payloads: 3447
 Recorded base source digest: 5b50131d96156bf0d9c35e7ad4af1a074a85bca0185cfc5ddd5125ad0a8b7e01
 ```
 
-The approximately 415 MB archive holds raw per-run records, checkpoints, synthetic witnesses, proofs/public vectors, generated circuits, keys, installed lockfiles and the bundle manifest. No GitHub release asset or public download URL is claimed here. A source-only export does not reproduce its complete fingerprint until exact archived installation-generated files are restored. Never weaken a changed-source check to resume a frozen run.
+The approximately 415 MB archive contains per-run results, checkpoints, synthetic witnesses, proofs/public vectors, generated circuits, keys and installed dependency locks. It remains author-held; no GitHub release asset or public download URL is claimed. The source-only export does not reproduce its complete source fingerprint until exact installation-generated files are restored. Do not weaken the identity guard to resume a run.
 
-## Completed full follow-up archive — author-held, not uploaded here
+## Completed full learning-follow-up archive — not uploaded here
 
 ```
 Filename: PCI_followup_results.tar.gz
@@ -37,24 +33,40 @@ Manifest-listed payloads: 18663
 Scientific source digest: ba8d57b73079993a77269e357094e4d7c23694b16a392f0ccc1be9dc4ca79b5e
 ```
 
-The server archive and copied archive passed independent checksums, and every listed payload was rehashed. Separate post-run reconstruction checked all evaluations and original bootstrap intervals. All 3,216 saved SNARK proofs were reverified with unchanged keys and independently recomputed bindings; scalar transition checks cover the complete 3,072-step certified sample. See [FOLLOWUP_RESULTS.md](FOLLOWUP_RESULTS.md) for scope and limitations.
+The copied archive and all listed payloads were checked. Separate reconstruction reproduced the original statistics, and the saved SNARK proofs and transition bindings were checked. This is internal artifact validation, not independent retraining or a formal security audit. Ed25519 signature bytes were not retained in this original follow-up. See [FOLLOWUP_RESULTS.md](FOLLOWUP_RESULTS.md) for corrected inference, metric and privacy scope.
 
-Full-precision audit outputs and helpers remain alongside the author-held evidence. The public CSVs are rounded extracts. The complete archive has not been added as a GitHub release asset in this update. Ed25519 signature bytes were not retained for post-run replay; do not claim independent replay of those signatures.
+## Source distributions
 
-## Source distribution identity
-
-The exported source comes from `PCI_AAMAS27_Rebuild_v1.zip` and `PCI_AAMAS27_Followup_v1_code.zip`. The latter distribution has SHA-256:
+The original follow-up source ZIP `PCI_AAMAS27_Followup_v1_code.zip` has SHA-256:
 
 ```
 7f00712c2f7fdab955570a1d1033d711cb350bc58135c6981851c901b31370ff
 ```
 
-Original package manifests include additional deployment/private-document files excluded from Git. Repository manifests explicitly identify the smaller export instead of pretending those absent files are included.
+The new seven-file distribution `PCI_Postsubmission_Certified_v1_code.zip` has SHA-256:
 
-## Verification and restoration
+```
+389920c5286184e223fe3a76e73763d45c3f1dceee56174e081ace9df76e1b94
+```
 
-Verify archive SHA-256, inspect `bundle_manifest.json`, and hash every named member before use. Reject absolute/traversal paths, symlinks and duplicates. Restore into a separate directory and never overwrite a running study. Verify configurations, checkpoints, circuit/key hashes, public-signal ordering and completion markers. Hash identity is not a security guarantee for arbitrary untrusted pickled checkpoints.
+Its payload source checksums are preserved in `experiments/PCI_Postsubmission_Certified_v1/SOURCE.sha256`. All six listed payloads were checked on the running server; the manifest is the seventh file. The protocol's byte identity is:
 
-The base archive separates `source/` and `results/`, with its frozen certification code expecting restored base results under `results/deadline/`. The follow-up archive retains its own paths, frozen base code/keys, and selected frozen checkpoints; inspect its manifest rather than assuming the base archive layout applies unchanged.
+```
+82ac42a23aac5aacf42bbb9cad6b1dac78e79826392e57a698af8e3d0178c4d1
+```
 
-The source packaging scripts demonstrate member-by-member verification, not a generic safe extractor for arbitrary untrusted archives. Fresh replications are separate studies; outcomes and keys should not be silently substituted into the frozen original evidence.
+The prototype's new repository checksum manifest covers its four unchanged scripts, excluding historical local reports and the new README. It is an export manifest, not the original ZIP's full manifest. The additional source verifier does not replace any experiment's runtime source fingerprint.
+
+## Running post-submission archive — not ready
+
+The target output is `PCI_postsubmission_certified_results.tar.gz`. No checksum, public download, complete data coverage, or successful full-result audit is claimed before packaging finishes. [POSTSUBMISSION_STATUS.json](POSTSUBMISSION_STATUS.json) is a dated progress snapshot only. The final gate is `POSTSUBMISSION_FULL_BENCHMARK_ARCHIVE_VERIFIED`, after complete analysis and member/whole-archive checks.
+
+That future full archive intentionally contains synthetic private witnesses/openings, disclosed records, SNARK-only public views, signatures, keys and trusted checkpoints. The complete research archive is not an auditor-only privacy view. Publication of any final data subset must preserve that distinction and the difference between generation, verification, admission and complete-episode wall times.
+
+The current release contains no new interim outcome tables, raw witnesses, signing secrets, proving keys, live logs, manuscript files, confidential reviews or private connection information. A status count is not a scientific result. No new software license is assigned.
+
+## Restore and verify safely
+
+Check the expected archive checksum and inspect `bundle_manifest.json`; reject unsafe absolute/traversal paths, links and duplicate names. Restore into a new directory, then check every named member, configurations, checkpoints, circuit/key identities and public-signal order. Never overwrite a running study or silently substitute fresh-run outcomes into original evidence. Only load trusted, identity-verified checkpoints; hashes do not make arbitrary pickles safe.
+
+The base archive separates `source/` and `results/`; frozen code expects restored base outcomes under `results/deadline/`. Other archives use their own layouts. Inspect each manifest rather than assuming one layout. Follow [POSTSUBMISSION_REPRODUCIBILITY.md](POSTSUBMISSION_REPRODUCIBILITY.md) for the exact prerequisite chain. Source-verification scripts start no experiments and provide no guarantee of scientific correctness or application-level privacy.
