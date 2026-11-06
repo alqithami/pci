@@ -1,0 +1,75 @@
+{
+  "adapter_sha256": "569663b27e0f1774e5a85075e9e539696f0dccfd58ed355672df33ee62b1764b",
+  "controls": [
+    {
+      "control": "warehouse complete synthetic source/receipt/config/RNG/count closure",
+      "status": "PASS"
+    },
+    {
+      "control": "warehouse synthetic production refusal",
+      "error": "SYNTHETIC_COHORT_REFUSED_FOR_RESEARCH_ANALYSIS",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "development cannot become confirmation",
+      "error": "COMPLETE_CONFIRMATION_REQUIRED",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "wrong completion producer schema",
+      "error": "PRODUCER_SCHEMA:STUDY_COMPLETE.json",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "selection must be bound before confirmation",
+      "error": "PROSPECTIVELY_BOUND_DEVELOPMENT_SELECTION_REQUIRED",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "selection receipt tampering",
+      "error": "PROSPECTIVELY_BOUND_DEVELOPMENT_SELECTION_REQUIRED",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "training budget tampering",
+      "error": "TRAINING_CONFIG_HASH",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "missing retained audit",
+      "error": "[Errno 2] No such file or directory: '/tmp/pci_confirmation_adapter_synthetic_8sd31v36/warehouse/cohort/evaluation/RETAINED_RECORD_AUDIT.json'",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "missing prescribed evaluation case file",
+      "error": "CASE_FILE_MEMBERSHIP",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "duplicate candidate-training-seed aggregate with rebound hashes",
+      "error": "INCOMPLETE_OR_DUPLICATE:ANALYSIS_SEED_ROWS",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "rebound impossible shield summary",
+      "error": "SHIELD_REPLACEMENT_INVARIANT",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "rware complete synthetic source/receipt/config/RNG/count closure",
+      "status": "PASS"
+    },
+    {
+      "control": "rware synthetic production refusal",
+      "error": "SYNTHETIC_COHORT_REFUSED_FOR_RESEARCH_ANALYSIS",
+      "status": "PASS_REFUSED"
+    }
+  ],
+  "schema": "PCI-CONFIRMATION-RECEIPT-ADAPTER-TESTS-v1",
+  "scientific_results_read": false,
+  "source_map_sha256": "e7fbf20f649ce40a21d42d644756cf519dd6fd2717564c5bbcf0eb0793473ed7",
+  "status": "PASS_SYNTHETIC_ADAPTER_CONTROLS",
+  "synthetic_only": true,
+  "test_source_sha256": "4eebf8182497d87dbe0d4af4c8927917374b8d9f6189c3e3d8b9609d005fa1c3",
+  "total_checks": 13
+}

@@ -1,0 +1,10 @@
+{
+  "schema": "PCI-CONFIRMATION-NUMERICAL-PIPELINE-CONTROLS-v1",
+  "status": "PASS",
+  "tests_run": 3,
+  "synthetic_only": true,
+  "scientific_results_read": false,
+  "fixtures_retained": false,
+  "core_source_sha256": "bd1efb92903686afb51e91cfca253c7d5bbbe1438a815c81bf6e0def509424ae",
+  "test_source_sha256": "56e2359da9ff5239e00483732dde48dc3ab68bcc1adfc6322f1dcb630e3c0b40"
+}

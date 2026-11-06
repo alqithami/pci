@@ -1,0 +1,30 @@
+{
+  "analysis_runtime_versions": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0"
+  },
+  "created_utc": "2026-11-06T15:49:18.221084+00:00",
+  "execution_scientific_adapter_qualified": false,
+  "qualification_receipts": {
+    "ADAPTER_TEST_RESULTS.json": "6ea643fb22b840bbf6344c403e77637469b5dce97f5c65e880bcb7d02cc0b6df",
+    "INDEPENDENT_TEST_RESULTS.json": "6292446f14a544bbd4aa24f46f7bcdea04beee912f177d788aaaef8083b7c000",
+    "PIPELINE_TEST_RESULTS.json": "f0fb86c97adecd6a6abf501786e775b1fd72b03c64777ddb39ac6eeac8fef678"
+  },
+  "recipe_sha256": "828f5e668876bd49569d635fff76f73d70630bbfd4e76309cca642ea42542328",
+  "review_sha256": "35c3d8b1542f6fa0a5fc50411c001764f1d2de02ac6eb1cfbac0e2d497dc4179",
+  "runtime_sources": {
+    "confirmation_analysis.py": "bd1efb92903686afb51e91cfca253c7d5bbbe1438a815c81bf6e0def509424ae",
+    "learning_receipts.py": "569663b27e0f1774e5a85075e9e539696f0dccfd58ed355672df33ee62b1764b"
+  },
+  "schema": "PCI-CONFIRMATION-ANALYSIS-IMPLEMENTATION-LOCK-v1",
+  "scientific_outcomes_read": false,
+  "scientific_results_generated": false,
+  "status": "PASS_SYNTHETIC_QUALIFICATION",
+  "test_sources": {
+    "test_confirmation_analysis.py": "fe6dc51ec68f1c6066145a125b345d615cf9771e83d12d6de07f6446cd90ffc1",
+    "test_learning_pipeline.py": "56e2359da9ff5239e00483732dde48dc3ab68bcc1adfc6322f1dcb630e3c0b40",
+    "test_learning_receipts.py": "4eebf8182497d87dbe0d4af4c8927917374b8d9f6189c3e3d8b9609d005fa1c3"
+  },
+  "total_controls": 48
+}

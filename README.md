@@ -4,16 +4,41 @@ Research code for **institutional specification, operational admission, and inte
 
 An institution declares the rules; a policy proposes an action; a common monitor can correct it; a certificate establishes the encoded relation for the expected admitted action. Low compatibility loss is not a safety certificate, and successful verification is not evidence of superior coordination or general trajectory confidentiality.
 
-## Evidence status — 9 October 2026
+## Audited warehouse development study — 6 November 2026
+
+The four-agent study completed **144 trained policies and 5,760 evaluation
+episodes**, followed by a complete retained-action audit. The equally sized
+candidate grids compare a Fixed penalty, Direct expected correction risk, a
+cost-critic PPO-Lagrangian baseline, and a shield-aware policy.
+
+The shield-aware pair had the largest development hypervolume and zero
+corrections by construction. It requested 625 additional policy-oracle rows per
+joint step. Direct risk had a larger selected-pair development hypervolume than
+Fixed and PPO-Lagrangian. These are **development results from three training
+seeds**. The four evaluation profiles were also used in training. The study
+does not establish a confirmatory advantage, unseen-profile generalization, or
+a reduction in proof work.
+
+- [Results, all candidate points, and vector figures](results/warehouse_development_20261106/)
+- [Frozen training and evaluation source](experiments/PCI_M3_Fair_Training_v1/)
+- [Development analysis and audit scope](analysis/warehouse_development_20261106/)
+- [Prospective confirmation analysis](analysis/confirmation_20261106/): exact paired inference, software controls, and the requirement for a complete family before reporting Holm-adjusted conclusions.
+
+Run `python3 scripts/verify_warehouse_development.py` to check the released
+source and data identities, reconstruct the seed totals, and reproduce the
+frozen two-candidate selection for each family. This check uses the standard
+library and starts no training or remote job.
+
+## Historical evidence snapshot — 9 October 2026
 
 | Study | Status | Scope |
 |---|---|---|
 | **Base rebuild** | Completed; archived and checked | 110 learned runs, 12 controller evaluations, three custom layouts; 96 certified transitions and 288 backend measurements. |
 | **Learning follow-up** | Completed; archived and checked | 125 learned runs, 36,000 final-policy episodes, RWARE extension and normalized controls; twelve original-protocol certified episodes, 3,072 transitions and 180 deliveries. |
 | **Blinded-action functional validation** | Two-agent functional checks passed; not a full benchmark | Separate private action-opening circuit and new keys; 21 real-circuit checks plus ten opening/binding checks. |
-| **Post-submission cross-policy benchmark** | **Running; full results pending** | 270 planned complete episodes comparing frozen PCI, fixed-penalty and consensus policies with a separately keyed blinded-action protocol. |
+| **Post-submission cross-policy benchmark** | Running at the October snapshot | 270 planned complete episodes comparing frozen PCI, fixed-penalty and consensus policies with a separately keyed blinded-action protocol. |
 
-The dated [execution snapshot](docs/POSTSUBMISSION_STATUS.json) is not a live monitor. The ongoing experiment is not modified by this repository update. Its planned counts must not be described as completed outcomes, and it does not train new policies or launch CUDA training.
+The dated [execution snapshot](docs/POSTSUBMISSION_STATUS.json) records the October observation. Its planned counts are separate from the completed November development study above.
 
 **Learning findings remain exploratory.** The complete 40-comparison nominal sensitivity analysis retains the original bootstrap results and adds paired-t/sign-flip procedures with separate Holm corrections. Neither corrected test family contains p<0.05. The favorable RWARE-tiny rotation contrast is sensitive to interval choice; fixed penalties are not generally beaten. This limits inference rather than establishing equivalence. [Reproduce the primary nominal analysis without retraining.](analysis/nominal_sensitivity_20261009/)
 
@@ -24,7 +49,7 @@ The dated [execution snapshot](docs/POSTSUBMISSION_STATUS.json) is not a live mo
 - [Base experiment](experiments/PCI_AAMAS27_Rebuild_v1/): simulator, learned methods, controllers, circuits, tests, analysis and packaging.
 - [Completed learning follow-up](experiments/PCI_AAMAS27_Followup_v1/): normalized mechanisms, nonsemantic control, adaptive PPO-Lagrangian, RWARE adapter and original-protocol full episodes.
 - [Blinded-action preparer and functional tests](experiments/PCI_Blinded_Action_Prototype_v2/): four preserved scripts that create a separate circuit variant; no frozen original source is edited.
-- [Running post-submission experiment](experiments/PCI_Postsubmission_Certified_v1/): exact launched source, fixed protocol, host tests, CPU profiler, staged validation, cross-policy execution, analysis and archive verification.
+- [Post-submission experiment snapshot](experiments/PCI_Postsubmission_Certified_v1/): exact launched source, fixed protocol, host tests, CPU profiler, staged validation, cross-policy execution, analysis and archive verification.
 - [Nominal sensitivity analysis](analysis/nominal_sensitivity_20261009/): exact event totals for 125 policies, unchanged analysis/check scripts, and separate intervention units.
 - [Base presentation results](results/base_study_20261008/) and [follow-up presentation results](results/followup_20261008/): historical rounded extracts retained unchanged.
 - [Scientific narrative and evidence map](docs/REVISION_STORY.md), [post-submission reproduction](docs/POSTSUBMISSION_REPRODUCIBILITY.md), and [paper-integration checklist](docs/PAPER_EVIDENCE_MAP.md).

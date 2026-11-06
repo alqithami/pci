@@ -1,0 +1,42 @@
+{
+  "export_transfer": {
+    "archive_bytes": 9210108,
+    "archive_sha256": "3fc7af83ea06f3b7b35396a6be036501b2ba0e880724d58e3ace6e7cd2255977",
+    "payload_files": 5963,
+    "source_map_sha256": "e7fbf20f649ce40a21d42d644756cf519dd6fd2717564c5bbcf0eb0793473ed7",
+    "status": "PASS_CLOSED_DEVELOPMENT_TRANSFER_AND_ALL_PAYLOAD_HASHES"
+  },
+  "independent_training_clusters": 3,
+  "retained_record_audit": {
+    "agent_decisions": 5898240,
+    "episode_count": 5760,
+    "independent_numpy_actor": true,
+    "independent_scalar_stage_checks": true,
+    "joint_steps": 1474560,
+    "manifest_sha256": "2d36b2e06f06387d1c1c05216393442a0170c8d9c7e21076fec3bd9940d372f3",
+    "original_case_report_count": 5760,
+    "original_sha256": "744863969786f772951395d61dc4923630a6771bdf3cc5c2a698956db84e27e8",
+    "policy_count": 144,
+    "recorded_action_native_replay": true,
+    "replacement_policy_rollouts": 0,
+    "schema": "PCI-FAIR-RETAINED-RECORD-AUDIT-v1",
+    "scope": "Recorded-action native transition replay plus independent actor/sampling/scalar correction reconciliation; no replacement episodes; no independent native-physics proof.",
+    "status": "PASS"
+  },
+  "schema": "PCI-PUBLIC-DEVELOPMENT-EVIDENCE-SUMMARY-v1",
+  "scope": "Audited warehouse development only; public sufficient statistics. Raw models, traces, full original audit record and cloud launch metadata are held separately.",
+  "summary_reconciliation": {
+    "confirmatory_inference_performed": false,
+    "scope": "Descriptive development summary. Published replay-audit bindings verified; raw policies and trace replay not independently reexecuted by this reporter.",
+    "source_map_sha256": "e7fbf20f649ce40a21d42d644756cf519dd6fd2717564c5bbcf0eb0793473ed7",
+    "status": "PASS_RECEIPT_BINDINGS_AND_INDEPENDENT_SUMMARY_AGGREGATION",
+    "validation_record_sha256": "c9ee3b1383e26082e5c42549302ccc44a02c3f01d4d2d3c066c811195fad1d9c"
+  },
+  "training_diagnostics": {
+    "qualification_record_sha256": "23ff1e02c3e669b5099057e08639f83f6398ef85a0826448dc8d5786af160746",
+    "scope": "Public per-run diagnostic summaries. Original per-update records remain separate.",
+    "training_cases": 144,
+    "update_rows": 36864
+  },
+  "training_hardware": "NVIDIA L4 on IBM Cloud"
+}

@@ -1,0 +1,34 @@
+Independent/source review record — 2026-11-06
+
+The spec auditor independently read the locked protocol and identified all
+unresolved interval/RNG/statistic/alpha choices before implementation. Root then
+explicitly completed those choices in a new prospective clarification; the old
+protocol was not changed or retroactively described as more specific.
+
+The independent numerical reviewer supplied analytical expected probabilities,
+areas, Holm staircases and fixed interval values. Review found three real issues
+and verified their correction: nested decision fields could survive partial
+outputs; invalid execution replicate rates could be hidden by averaging; and
+handcrafted execution provenance could enter scientific combination. Current
+code rejects these cases, requires complete source-bound learning input
+revalidation, and refuses scientific execution ingestion pending its real adapter.
+
+A separate producer-schema review found no blocking adapter mismatch with the
+pinned43-file source. Full synthetic warehouse/RWARE fixtures and targeted
+negative controls validate the receipt boundary without simulating a GPU or
+raw-trace replay. The RWARE reference-evidence requirement is explicit and its
+current absence is not misrepresented as satisfied by a synthetic fixture.
+
+The final numerical glue was independently reviewed for keyword/signature
+compatibility and checked on artificial160-row data. Both reviewers and the
+component author accessed no scientific outcomes or remote infrastructure.
+
+Resolved within scope: exact rational endpoints/ties; all20cluster signs; correct
+paired nesting/order; protocol12contrast membership; raw partial-only labels;
+new recipe/RNG source binding; complete learning receipt/config reconstruction;
+scientific execution provenance refusal; no overwrite output policy.
+
+Remaining prerequisites: actual closed confirmation cohorts; authentic RWARE
+reference evidence; future qualified scientific execution receipt adapter and
+workload; all12contrasts for final familywise inference. This review qualifies
+software controls, not efficacy or journal readiness.

@@ -1,0 +1,11 @@
+{
+  "schema": "PCI-CONFIRMATION-INFERENCE-INDEPENDENT-CONTROLS-v1",
+  "status": "PASS",
+  "synthetic_only": true,
+  "scientific_outcomes_accessed": false,
+  "tests_run": 32,
+  "failures": 0,
+  "errors": 0,
+  "test_source_sha256": "fe6dc51ec68f1c6066145a125b345d615cf9771e83d12d6de07f6446cd90ffc1",
+  "core_source_sha256": "bd1efb92903686afb51e91cfca253c7d5bbbe1438a815c81bf6e0def509424ae"
+}

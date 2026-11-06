@@ -1,0 +1,353 @@
+{
+  "cost_limit": 0.05,
+  "cross_domain_pooling": false,
+  "development_seeds": [
+    61001,
+    61002,
+    61003
+  ],
+  "estimator_ablation_candidate_ids": [
+    "direct_02",
+    "direct_11"
+  ],
+  "estimator_ablation_selection": {
+    "development_hypervolume": 0.016684969266255695,
+    "eligible_ids": [
+      "direct_01",
+      "direct_02",
+      "direct_03",
+      "direct_05",
+      "direct_06",
+      "direct_07",
+      "direct_09",
+      "direct_10",
+      "direct_11"
+    ],
+    "lambda_zero_role": "Identity controls; never active-estimator evidence.",
+    "primary_frontier_selection_changed": false,
+    "rule": "Same development-only two-point hypervolume among NONZERO auxiliary cells; independent of primary selection, deterministic candidate-ID tie break."
+  },
+  "families": {
+    "direct": {
+      "all_candidate_mean_points": {
+        "direct_00": {
+          "cost": 0.04320475260416667,
+          "outside_primary_rectangle": false,
+          "utility": 0.016324869791666665
+        },
+        "direct_01": {
+          "cost": 0.02255045572916667,
+          "outside_primary_rectangle": false,
+          "utility": 0.01724446614583333
+        },
+        "direct_02": {
+          "cost": 0.007869466145833334,
+          "outside_primary_rectangle": false,
+          "utility": 0.017317708333333334
+        },
+        "direct_03": {
+          "cost": 0.0022135416666666666,
+          "outside_primary_rectangle": false,
+          "utility": 0.0165283203125
+        },
+        "direct_04": {
+          "cost": 0.0071370442708333336,
+          "outside_primary_rectangle": false,
+          "utility": 0.016398111979166668
+        },
+        "direct_05": {
+          "cost": 0.0072265624999999995,
+          "outside_primary_rectangle": false,
+          "utility": 0.017073567708333334
+        },
+        "direct_06": {
+          "cost": 0.003401692708333334,
+          "outside_primary_rectangle": false,
+          "utility": 0.015804036458333334
+        },
+        "direct_07": {
+          "cost": 0.0018636067708333332,
+          "outside_primary_rectangle": false,
+          "utility": 0.016088867187499998
+        },
+        "direct_08": {
+          "cost": 0.004280598958333334,
+          "outside_primary_rectangle": false,
+          "utility": 0.012768554687500001
+        },
+        "direct_09": {
+          "cost": 0.004606119791666667,
+          "outside_primary_rectangle": false,
+          "utility": 0.013704427083333333
+        },
+        "direct_10": {
+          "cost": 0.0039713541666666664,
+          "outside_primary_rectangle": false,
+          "utility": 0.014249674479166669
+        },
+        "direct_11": {
+          "cost": 0.0011230468750000001,
+          "outside_primary_rectangle": false,
+          "utility": 0.015511067708333333
+        }
+      },
+      "descriptive_sensitivity": {
+        "0.01": 0.014154012997945149,
+        "0.025": 0.01605223019917806,
+        "0.05": 0.016684969266255695,
+        "0.1": 0.017001338799794517,
+        "1": 0.017286071379979454
+      },
+      "development_hypervolume": 0.016684969266255695,
+      "selected": [
+        "direct_02",
+        "direct_11"
+      ]
+    },
+    "fixed": {
+      "all_candidate_mean_points": {
+        "fixed_00": {
+          "cost": 0.04320475260416667,
+          "outside_primary_rectangle": false,
+          "utility": 0.016324869791666665
+        },
+        "fixed_01": {
+          "cost": 0.025537109375000002,
+          "outside_primary_rectangle": false,
+          "utility": 0.016365559895833333
+        },
+        "fixed_02": {
+          "cost": 0.020979817708333334,
+          "outside_primary_rectangle": false,
+          "utility": 0.016739908854166666
+        },
+        "fixed_03": {
+          "cost": 0.011767578124999999,
+          "outside_primary_rectangle": false,
+          "utility": 0.016739908854166666
+        },
+        "fixed_04": {
+          "cost": 0.0071370442708333336,
+          "outside_primary_rectangle": false,
+          "utility": 0.016398111979166668
+        },
+        "fixed_05": {
+          "cost": 0.006502278645833334,
+          "outside_primary_rectangle": false,
+          "utility": 0.016585286458333334
+        },
+        "fixed_06": {
+          "cost": 0.004752604166666666,
+          "outside_primary_rectangle": false,
+          "utility": 0.013663736979166667
+        },
+        "fixed_07": {
+          "cost": 0.004280598958333334,
+          "outside_primary_rectangle": false,
+          "utility": 0.012768554687500001
+        },
+        "fixed_08": {
+          "cost": 0.0033854166666666668,
+          "outside_primary_rectangle": false,
+          "utility": 0.015120442708333334
+        },
+        "fixed_09": {
+          "cost": 0.0027180989583333332,
+          "outside_primary_rectangle": false,
+          "utility": 0.010009765625
+        },
+        "fixed_10": {
+          "cost": 0.0014567057291666665,
+          "outside_primary_rectangle": false,
+          "utility": 0.012272135416666668
+        },
+        "fixed_11": {
+          "cost": 0.0006266276041666666,
+          "outside_primary_rectangle": false,
+          "utility": 0.0064127604166666664
+        }
+      },
+      "descriptive_sensitivity": {
+        "0.01": 0.011993066469828291,
+        "0.025": 0.014748398462931316,
+        "0.05": 0.015666842460632328,
+        "0.1": 0.01612606445948283,
+        "1": 0.016539364258448284
+      },
+      "development_hypervolume": 0.015666842460632328,
+      "selected": [
+        "fixed_05",
+        "fixed_10"
+      ]
+    },
+    "lagrangian": {
+      "all_candidate_mean_points": {
+        "lagrangian_00": {
+          "cost": 0.008748372395833334,
+          "outside_primary_rectangle": false,
+          "utility": 0.016023763020833335
+        },
+        "lagrangian_01": {
+          "cost": 0.007218424479166667,
+          "outside_primary_rectangle": false,
+          "utility": 0.0151123046875
+        },
+        "lagrangian_02": {
+          "cost": 0.004345703125,
+          "outside_primary_rectangle": false,
+          "utility": 0.015714518229166665
+        },
+        "lagrangian_03": {
+          "cost": 0.0021321614583333336,
+          "outside_primary_rectangle": false,
+          "utility": 0.012589518229166666
+        },
+        "lagrangian_04": {
+          "cost": 0.008715820312499999,
+          "outside_primary_rectangle": false,
+          "utility": 0.016276041666666668
+        },
+        "lagrangian_05": {
+          "cost": 0.005501302083333333,
+          "outside_primary_rectangle": false,
+          "utility": 0.0153564453125
+        },
+        "lagrangian_06": {
+          "cost": 0.0062744140625,
+          "outside_primary_rectangle": false,
+          "utility": 0.016121419270833333
+        },
+        "lagrangian_07": {
+          "cost": 0.003946940104166667,
+          "outside_primary_rectangle": false,
+          "utility": 0.014396158854166667
+        },
+        "lagrangian_08": {
+          "cost": 0.006567382812499999,
+          "outside_primary_rectangle": false,
+          "utility": 0.015152994791666666
+        },
+        "lagrangian_09": {
+          "cost": 0.008146158854166667,
+          "outside_primary_rectangle": false,
+          "utility": 0.0164306640625
+        },
+        "lagrangian_10": {
+          "cost": 0.0068603515624999995,
+          "outside_primary_rectangle": false,
+          "utility": 0.0161865234375
+        },
+        "lagrangian_11": {
+          "cost": 0.008544921875,
+          "outside_primary_rectangle": false,
+          "utility": 0.016805013020833332
+        }
+      },
+      "descriptive_sensitivity": {
+        "0.01": 0.010518617100185817,
+        "0.025": 0.014290454652574327,
+        "0.05": 0.015547733836703829,
+        "0.1": 0.01617637342876858,
+        "1": 0.016742149061626854
+      },
+      "development_hypervolume": 0.015547733836703829,
+      "selected": [
+        "lagrangian_03",
+        "lagrangian_11"
+      ]
+    },
+    "shieldaware": {
+      "all_candidate_mean_points": {
+        "shieldaware_00": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.024853515625
+        },
+        "shieldaware_01": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.02392578125
+        },
+        "shieldaware_02": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.019832356770833334
+        },
+        "shieldaware_03": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.013582356770833333
+        },
+        "shieldaware_04": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.025244140624999998
+        },
+        "shieldaware_05": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.023917643229166664
+        },
+        "shieldaware_06": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.019401041666666664
+        },
+        "shieldaware_07": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.0142578125
+        },
+        "shieldaware_08": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.0249755859375
+        },
+        "shieldaware_09": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.0243408203125
+        },
+        "shieldaware_10": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.020589192708333332
+        },
+        "shieldaware_11": {
+          "cost": 0.0,
+          "outside_primary_rectangle": false,
+          "utility": 0.015323893229166668
+        }
+      },
+      "descriptive_sensitivity": {
+        "0.01": 0.025244140625,
+        "0.025": 0.025244140624999998,
+        "0.05": 0.025244140624999998,
+        "0.1": 0.025244140624999998,
+        "1": 0.025244140624999998
+      },
+      "development_hypervolume": 0.025244140624999998,
+      "selected": [
+        "shieldaware_00",
+        "shieldaware_04"
+      ]
+    }
+  },
+  "primary_test_data_opened": false,
+  "raw_points_preserved": true,
+  "schema": "PCI-DEVELOPMENT-FRONTIER-SELECTION-v1",
+  "selected_candidate_ids": [
+    "fixed_05",
+    "fixed_10",
+    "direct_02",
+    "direct_11",
+    "lagrangian_03",
+    "lagrangian_11",
+    "shieldaware_00",
+    "shieldaware_04"
+  ],
+  "selection_rule": "Maximum two-point finite-candidate hypervolume cost[0,0.05],utility[0,1]; lexicographic tie break",
+  "source_sha256": "e16fa511a43397b62b9dd3a7630f78e6d20835f5aedef98b822c09803c21471e",
+  "status": "DEVELOPMENT_ONLY_SELECTION",
+  "study_domain": "warehouse"
+}
