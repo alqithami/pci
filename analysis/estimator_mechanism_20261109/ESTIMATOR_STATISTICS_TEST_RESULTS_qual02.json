@@ -1,0 +1,17 @@
+{
+  "status": "PASS_SYNTHETIC_STATISTICAL_QUALIFICATION",
+  "scope": "Synthetic independent arithmetic and inference controls only; no scientific outcomes or receipt-adapter validation.",
+  "tests_run": 15,
+  "failures": 0,
+  "errors": 0,
+  "analysis_id": "PCI-M3-ESTIMATOR-ANALYSIS-20261109-v1",
+  "required_runtime": {
+    "python": "3.12.14",
+    "numpy": "2.3.5",
+    "scipy": "1.17.0"
+  },
+  "sources": {
+    "estimator_statistics.py": "9ed0d0c4996e1bce5a185e96fdd715d203cacc40338c8f0c7b975a4ea8e68adb",
+    "test_estimator_statistics.py": "bc2285b0e69c643e73f656d62dbb9c2ffec6a7e9456f484b11461b6fdb7d0ad2"
+  }
+}

@@ -1,0 +1,121 @@
+{
+  "analysis_runtime_versions": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0"
+  },
+  "base_candidate_ids": [
+    "direct_02",
+    "direct_11"
+  ],
+  "base_settings": {
+    "direct_02": {
+      "auxiliary_coef": 0.2,
+      "penalty_coef": 0.0
+    },
+    "direct_11": {
+      "auxiliary_coef": 0.8,
+      "penalty_coef": 1.0
+    }
+  },
+  "canonical_contrast_ids": [
+    "Estimator Exact minus Score",
+    "Estimator Exact minus Conditional"
+  ],
+  "checkpoint_rule": "Final prescribed step only; no checkpoint or pair reselection.",
+  "created_utc": "2026-11-08T21:50:44.119048+00:00",
+  "domain": "warehouse",
+  "endpoint": {
+    "aggregation": "Give the four trained profiles equal weights. Calculate the endpoint within each seed for the fixed pair of base candidates, then average over the 10 training clusters.",
+    "cost": "institutional_replacements/(4*joint_steps)",
+    "cost_bound": {
+      "denominator": 20,
+      "numerator": 1
+    },
+    "name": "Normalized finite two-policy dominated hypervolume within each training cluster.",
+    "outside_rectangle": "Retain every point and flag costs above the declared bound. A point above the bound contributes no area. Do not select a new bound or interpolate between policies.",
+    "utility": "deliveries/(4*joint_steps)",
+    "utility_rectangle": [
+      0,
+      1
+    ]
+  },
+  "estimators": [
+    "exact",
+    "score",
+    "conditional"
+  ],
+  "evaluation_agent_decisions": 4915200,
+  "evaluation_episodes": 4800,
+  "evaluation_joint_steps": 1228800,
+  "evaluation_seed_namespace": "world_seed = 3804000000 + 1000 * training_cluster_index + world_index; policy_seed = world_seed + 50000000. The four profiles share the declared world and policy streams.",
+  "evaluation_worlds_per_profile": 20,
+  "intervals": {
+    "bootstrap": "Pointwise 95% paired whole-training-cluster percentile interval with 10,000 resamples. Use NumPy Generator(PCG64). Derive the seed from the first eight bytes, big-endian, of SHA256(recipe_id + slash + contrast_id). Use linear/type-7 quantiles calculated from exact integer-scaled resample sums.",
+    "dz": "Paired mean divided by paired sample standard deviation (ddof=1); undefined when that standard deviation is zero.",
+    "paired_t": "Pointwise 95% paired-t sensitivity interval with 9 degrees of freedom; explicitly undefined when paired sample variance is zero.",
+    "simultaneous": false
+  },
+  "joint_steps_per_policy": 524288,
+  "limits": [
+    "This study compares estimator pathways for fixed J, beta, lambda, and optimizer settings; gradient noise and computational work can affect optimization.",
+    "It guarantees no Direct advantage over Fixed, external generalization, or proof efficiency.",
+    "The case-summary adapter checks original published replay-audit bindings. It does not perform another raw model/trace replay or attest the publisher.",
+    "Exact, score, and conditional estimators use established machinery; no novel unbiasedness theorem is claimed."
+  ],
+  "multiplicity": {
+    "alpha": 0.05,
+    "complete_family_required": true,
+    "family_size": 2,
+    "method": "Holm step-down",
+    "original_global_Holm12_changed": false,
+    "partial_status": "DESCRIPTIVE_PARTIAL_ESTIMATOR_FAMILY"
+  },
+  "n_agents": 4,
+  "profile_weights": {
+    "capacity_tight": 0.25,
+    "nominal": 0.25,
+    "quota_tight": 0.25,
+    "rule_shift": 0.25
+  },
+  "protocol_canonical_sha256": "9bba352fa2c4f05db70a666e716e99d452981b2406831f237c3be6eef934dff3",
+  "readiness_addition": "CUDA_READINESS.estimator_modes_pass must equal {exact: true, score: true, conditional: true}. Actual source-bound engineering receipts require external review before launch.",
+  "recipe_id": "PCI-M3-ESTIMATOR-ANALYSIS-20261109-v1",
+  "required_design_fields": [
+    "stage=estimator_ablation",
+    "study_domain=warehouse",
+    "training_policies=60",
+    "training_seeds=64001..64010",
+    "estimator_analysis_recipe_sha256",
+    "estimator_analysis_implementation_lock_sha256",
+    "development_selection_sha256"
+  ],
+  "risk_minibatch_groups": null,
+  "samples_per_state": 32,
+  "schema": "PCI-M3-ESTIMATOR-ANALYSIS-RECIPE-v1",
+  "scope": "Prospective 10-cluster estimator-mechanism study, separate from the unchanged original global Holm12 family. No scientific outcomes from seeds 64001\u201364010 were opened during recipe preparation.",
+  "score_baseline": "loo",
+  "source_map_sha256": "e7fbf20f649ce40a21d42d644756cf519dd6fd2717564c5bbcf0eb0793473ed7",
+  "stage": "estimator_ablation",
+  "status": "PROSPECTIVE_RECIPE_NOT_SCIENTIFIC_AUTHORIZATION",
+  "test": {
+    "clusters": 10,
+    "direction": "two-sided",
+    "method": "Enumerate all 2^10 paired-cluster sign assignments. Use the absolute mean paired difference, inclusive tail ties, and exact rational/integer arithmetic. Apply no Monte Carlo plus-one correction.",
+    "null": "Joint sign-flip invariance under paired-cluster sign symmetry or exchangeability; this is not a distribution-free test of mean zero alone."
+  },
+  "training_joint_steps": 31457280,
+  "training_policies": 60,
+  "training_seeds": [
+    64001,
+    64002,
+    64003,
+    64004,
+    64005,
+    64006,
+    64007,
+    64008,
+    64009,
+    64010
+  ]
+}

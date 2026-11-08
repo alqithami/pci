@@ -1,0 +1,119 @@
+{
+  "schema": "PCI-ESTIMATOR-RECEIPT-ADAPTER-TESTS-v1",
+  "status": "PASS",
+  "scope": "Artificial complete-shaped software controls only; no scientific outcomes or raw trace/model replay.",
+  "controls": [
+    {
+      "control": "Complete synthetic 60-policy / 4,800-summary closure and endpoint integration",
+      "status": "PASS"
+    },
+    {
+      "control": "Unequal mode/seed full fixture reproduces independent nonzero endpoints and contrast wiring",
+      "status": "PASS"
+    },
+    {
+      "control": "Artificial marker is refused in production mode",
+      "status": "PASS_REFUSED",
+      "error": "SYNTHETIC_COHORT_REFUSED_FOR_RESEARCH_ANALYSIS"
+    },
+    {
+      "control": "Primary stage cannot become estimator stage",
+      "status": "PASS_REFUSED",
+      "error": "COMPLETE_ESTIMATOR_COHORT_REQUIRED"
+    },
+    {
+      "control": "Incomplete training cohort refused",
+      "status": "PASS_REFUSED",
+      "error": "PRESCRIBED_TRAINING_BUDGET"
+    },
+    {
+      "control": "Live owned worker refused",
+      "status": "PASS_REFUSED",
+      "error": "OWNED_WORKERS_NOT_CLOSED"
+    },
+    {
+      "control": "Explicit stage authority required",
+      "status": "PASS_REFUSED",
+      "error": "EXPLICIT_ESTIMATOR_DESIGN_SCOPE_REQUIRED"
+    },
+    {
+      "control": "Prospective recipe binding required",
+      "status": "PASS_REFUSED",
+      "error": "PROSPECTIVE_ESTIMATOR_ANALYSIS_RECIPE_BINDING_REQUIRED"
+    },
+    {
+      "control": "Prospective implementation binding required",
+      "status": "PASS_REFUSED",
+      "error": "PROSPECTIVE_ESTIMATOR_ANALYSIS_IMPLEMENTATION_BINDING_REQUIRED"
+    },
+    {
+      "control": "Selection body cannot be edited",
+      "status": "PASS_REFUSED",
+      "error": "PROSPECTIVELY_BOUND_DEVELOPMENT_SELECTION_REQUIRED"
+    },
+    {
+      "control": "All three actual estimator modes required",
+      "status": "PASS_REFUSED",
+      "error": "ALL_ESTIMATOR_MODES_READINESS_REQUIRED"
+    },
+    {
+      "control": "Unbound training configuration refused",
+      "status": "PASS_REFUSED",
+      "error": "TRAINING_CONFIG_HASH"
+    },
+    {
+      "control": "A missing scheduled case cannot be ignored",
+      "status": "PASS_REFUSED",
+      "error": "CASE_FILE_MEMBERSHIP"
+    },
+    {
+      "control": "Unexpected case file refused",
+      "status": "PASS_REFUSED",
+      "error": "CASE_FILE_MEMBERSHIP"
+    },
+    {
+      "control": "Unbound summary change refused",
+      "status": "PASS_REFUSED",
+      "error": "CASE_RECEIPT_HASH"
+    },
+    {
+      "control": "Hash-rebound impossible count refused",
+      "status": "PASS_REFUSED",
+      "error": "COUNT_EXPOSURE_OR_HAMMING_BOUND"
+    },
+    {
+      "control": "Hash-rebound duplicate aggregate cluster refused",
+      "status": "PASS_REFUSED",
+      "error": "INCOMPLETE_OR_DUPLICATE:ANALYSIS_SEED_ROWS"
+    },
+    {
+      "control": "Duplicate producer JSON key refused",
+      "status": "PASS_REFUSED",
+      "error": "DUPLICATE_JSON_KEY:stage"
+    },
+    {
+      "control": "Symlink completion input refused",
+      "status": "PASS_REFUSED",
+      "error": "SYMLINK_INPUT:/tmp/pci_estimator_adapter_synthetic_iwo9qx78/cohort/STUDY_COMPLETE.json"
+    },
+    {
+      "control": "Held inputs are rechecked after use",
+      "status": "PASS_REFUSED",
+      "error": "INPUT_CHANGED_AFTER_READ:/tmp/pci_estimator_adapter_synthetic_iwo9qx78/held_body.txt"
+    },
+    {
+      "control": "Wrong executable source map refused",
+      "status": "PASS_REFUSED",
+      "error": "UNQUALIFIED_SOURCE_MAP"
+    },
+    {
+      "control": "Restored synthetic fixture passes after all negative controls",
+      "status": "PASS"
+    }
+  ],
+  "sources": {
+    "estimator_receipts.py": "142923052fceb8463f5408682148b004a7e844147f5fa7e9d6c405a8666119d3",
+    "estimator_adapter_fixtures.py": "a3e9cb2805a6ec886a4889f22cf58de9f76b66af10d908bb8589da5a89afca3f",
+    "test_estimator_receipts.py": "dfb90002831c81709051f2f2183f0a658466f36cc0e34e445f958d8d64ba1a1e"
+  }
+}

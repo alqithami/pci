@@ -1,0 +1,34 @@
+{
+  "analysis_runtime_versions": {
+    "numpy": "2.3.5",
+    "python": "3.12.14",
+    "scipy": "1.17.0"
+  },
+  "controls": {
+    "pipeline": 6,
+    "receipt_adapter": 22,
+    "statistics": 15
+  },
+  "independent_review_required_before_scientific_launch": true,
+  "qualification_receipts": {
+    "ESTIMATOR_ADAPTER_TEST_RESULTS.json": "8ad65ff23cd47bb553d4bd9cc51682300512e02cc56800392abd073b3ed14662",
+    "ESTIMATOR_PIPELINE_TEST_RESULTS.json": "194fa8c2e7090b9de3ee43aac68f72bbf088516ae2ac3c3c4c41352f422fa28b",
+    "ESTIMATOR_STATISTICS_TEST_RESULTS_qual02.json": "662ef9365ffa10aea1b7012c9900f41c3500aaa910f632fb708d0ae0d44c18a3"
+  },
+  "qualification_sources": {
+    "estimator_adapter_fixtures.py": "a3e9cb2805a6ec886a4889f22cf58de9f76b66af10d908bb8589da5a89afca3f",
+    "qualify_estimator_analysis.py": "704f3b8da51424140a0e28fb6061cbaa70e03b18bfae4ed4b2c44342cc6b0cad",
+    "test_estimator_pipeline.py": "9209830ecc561cb478322144e933ee9902f90e3c59307a73a31ff57e9d00f4c6",
+    "test_estimator_receipts.py": "dfb90002831c81709051f2f2183f0a658466f36cc0e34e445f958d8d64ba1a1e",
+    "test_estimator_statistics.py": "bc2285b0e69c643e73f656d62dbb9c2ffec6a7e9456f484b11461b6fdb7d0ad2"
+  },
+  "recipe_sha256": "1c70ed003749fd69487bdfa1fef8ddff781cb0f5f87b3f8e59d06d9bd5c2053d",
+  "runtime_sources": {
+    "estimator_analysis.py": "aa7e6acdfccb6d4a3d7184f7edbc5ce4e568d5f2abeb332f745661cfd4f415bd",
+    "estimator_receipts.py": "142923052fceb8463f5408682148b004a7e844147f5fa7e9d6c405a8666119d3",
+    "estimator_statistics.py": "9ed0d0c4996e1bce5a185e96fdd715d203cacc40338c8f0c7b975a4ea8e68adb"
+  },
+  "schema": "PCI-ESTIMATOR-ANALYSIS-IMPLEMENTATION-LOCK-v1",
+  "scope": "Prospective synthetic numerical, complete-shaped receipt and pipeline qualification. No scientific launch authority or external attestation.",
+  "status": "PASS_SYNTHETIC_QUALIFICATION"
+}

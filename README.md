@@ -4,6 +4,19 @@ Research code for **institutional specification, operational admission, and inte
 
 An institution declares the rules; a policy proposes an action; a common monitor can correct it; a certificate establishes the encoded relation for the expected admitted action. Low compatibility loss is not a safety certificate, and successful verification is not evidence of superior coordination or general trajectory confidentiality.
 
+## Prospective estimator mechanism study — 9 November 2026
+
+The separate estimator analysis is now frozen and software-qualified before new
+scientific outcomes. It compares exact, score/leave-one-out, and conditional
+cost-gradient estimators while holding the two nonzero development-selected
+Direct configurations, objective coefficients, and 524,288-step budgets fixed.
+The scheduled block has 60 policies and ten fresh training clusters. Its two
+contrasts form their own prespecified Holm2 family; the original incomplete
+Holm12 family is unchanged. Software and engineering fixtures supply no
+learning result.
+
+- [Prospective recipe, source-bound analysis, and qualification controls](analysis/estimator_mechanism_20261109/)
+
 ## Audited warehouse confirmation — 9 November 2026
 
 The fresh confirmation block completed **160 trained policies, 20 training-seed

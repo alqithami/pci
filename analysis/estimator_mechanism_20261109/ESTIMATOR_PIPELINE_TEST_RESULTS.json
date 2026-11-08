@@ -1,0 +1,37 @@
+{
+  "schema": "PCI-ESTIMATOR-PIPELINE-TESTS-v1",
+  "status": "PASS",
+  "scope": "Synthetic software controls only. No scientific results, raw replay, or remote job.",
+  "controls": [
+    {
+      "control": "Qualified recipe, runtime and executable source hashes match",
+      "status": "PASS"
+    },
+    {
+      "control": "Full unequal 60-policy synthetic pipeline is explicitly non-scientific",
+      "status": "PASS"
+    },
+    {
+      "control": "Production CLI refuses the artificial marker and writes no output",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "A result destination cannot be overwritten",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "A changed recipe identity fails before inference",
+      "status": "PASS_REFUSED"
+    },
+    {
+      "control": "Runtime changes require requalification",
+      "status": "PASS_REFUSED"
+    }
+  ],
+  "runtime_sources": {
+    "estimator_analysis.py": "aa7e6acdfccb6d4a3d7184f7edbc5ce4e568d5f2abeb332f745661cfd4f415bd",
+    "estimator_statistics.py": "9ed0d0c4996e1bce5a185e96fdd715d203cacc40338c8f0c7b975a4ea8e68adb",
+    "estimator_receipts.py": "142923052fceb8463f5408682148b004a7e844147f5fa7e9d6c405a8666119d3"
+  },
+  "test_source_sha256": "9209830ecc561cb478322144e933ee9902f90e3c59307a73a31ff57e9d00f4c6"
+}
