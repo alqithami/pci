@@ -4,6 +4,30 @@ Research code for **institutional specification, operational admission, and inte
 
 An institution declares the rules; a policy proposes an action; a common monitor can correct it; a certificate establishes the encoded relation for the expected admitted action. Low compatibility loss is not a safety certificate, and successful verification is not evidence of superior coordination or general trajectory confidentiality.
 
+## Audited warehouse confirmation — 9 November 2026
+
+The fresh confirmation block completed **160 trained policies, 20 training-seed
+clusters and 12,800 audited evaluation episodes**. Direct expected-cost
+regularization does **not** show a resolved advantage over the tuned Fixed
+family on the frozen two-policy area endpoint. It has greater observed area
+than the selected cost-critic Lagrangian pair and smaller area than the exact
+shield-aware pair. Shielding adds 625 proposal-time oracle rows per joint step.
+
+The original Holm12 family is incomplete: **nine contrasts remain pending**.
+Raw warehouse tests and pointwise intervals are descriptive partial-family
+results. No RWARE transfer, trained scaling or policy-to-proof savings claim is
+made. Confirmation uses a longer training budget than development as well as
+fresh seeds.
+
+- [Complete public counts, exact endpoints, uncertainty and vector figures](results/warehouse_confirmation_20261109/)
+- [Standard-library confirmation verifier](scripts/verify_warehouse_confirmation.py)
+- [Unchanged prospective inference recipe](analysis/confirmation_20261106/)
+
+Run `python3 scripts/verify_warehouse_confirmation.py` from the repository root.
+This checks public counts, file/source identities, seed areas and exact sign
+tests; it starts no training or remote job and does not replace a raw replay.
+
+
 ## Audited warehouse development study — 6 November 2026
 
 The four-agent study completed **144 trained policies and 5,760 evaluation

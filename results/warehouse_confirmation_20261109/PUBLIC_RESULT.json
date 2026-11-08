@@ -1,0 +1,4549 @@
+{
+  "cohort_counts": {
+    "evaluation_agent_decisions": 13107200,
+    "evaluation_episodes": 12800,
+    "evaluation_joint_steps": 3276800,
+    "policies": 160,
+    "training_clusters": 20,
+    "training_joint_steps": 83886080
+  },
+  "contrasts": [
+    {
+      "bootstrap95": {
+        "confidence": 0.95,
+        "endpoint_arithmetic": "exact_rational_linear_quantiles_of_integer_scaled_resample_sums",
+        "lower": {
+          "decimal": -0.0005404201932251453,
+          "denominator": 268435456000,
+          "numerator": -145067941
+        },
+        "method": "paired_whole_training_cluster_percentile",
+        "numpy_version": "2.3.5",
+        "pointwise": true,
+        "quantile_method": "linear",
+        "resample_index_sha256": "f73fdae4a7672f5dc9b099d5293d0c2e5c0ebcf16451dc49a9666dc25d024799",
+        "resamples": 10000,
+        "rng": "NumPy Generator(PCG64)",
+        "seed": 5241013097387328846,
+        "seed_derivation_utf8": "PCI-M3-CONFIRMATION-ANALYSIS-20261106-v1/Warehouse Direct minus Fixed",
+        "simultaneous": false,
+        "upper": {
+          "decimal": 0.00022820879891514778,
+          "denominator": 268435456000,
+          "numerator": 61259333
+        }
+      },
+      "cluster_differences": [
+        {
+          "difference": {
+            "decimal": -0.0010748296976089478,
+            "denominator": 335544320,
+            "numerator": -360653
+          },
+          "training_seed": 62001
+        },
+        {
+          "difference": {
+            "decimal": -0.0003265559673309326,
+            "denominator": 167772160,
+            "numerator": -54787
+          },
+          "training_seed": 62002
+        },
+        {
+          "difference": {
+            "decimal": 0.000823250412940979,
+            "denominator": 335544320,
+            "numerator": 276237
+          },
+          "training_seed": 62003
+        },
+        {
+          "difference": {
+            "decimal": -0.00044888854026794436,
+            "denominator": 167772160,
+            "numerator": -75311
+          },
+          "training_seed": 62004
+        },
+        {
+          "difference": {
+            "decimal": -0.0010386109352111816,
+            "denominator": 16777216,
+            "numerator": -17425
+          },
+          "training_seed": 62005
+        },
+        {
+          "difference": {
+            "decimal": 0.00019246935844421386,
+            "denominator": 167772160,
+            "numerator": 32291
+          },
+          "training_seed": 62006
+        },
+        {
+          "difference": {
+            "decimal": 0.0005284368991851807,
+            "denominator": 167772160,
+            "numerator": 88657
+          },
+          "training_seed": 62007
+        },
+        {
+          "difference": {
+            "decimal": 0.001156136393547058,
+            "denominator": 67108864,
+            "numerator": 77587
+          },
+          "training_seed": 62008
+        },
+        {
+          "difference": {
+            "decimal": -0.0015036463737487793,
+            "denominator": 16777216,
+            "numerator": -25227
+          },
+          "training_seed": 62009
+        },
+        {
+          "difference": {
+            "decimal": 0.00020198822021484376,
+            "denominator": 5242880,
+            "numerator": 1059
+          },
+          "training_seed": 62010
+        },
+        {
+          "difference": {
+            "decimal": -0.0005573511123657226,
+            "denominator": 41943040,
+            "numerator": -23377
+          },
+          "training_seed": 62011
+        },
+        {
+          "difference": {
+            "decimal": 0.00012744665145874022,
+            "denominator": 83886080,
+            "numerator": 10691
+          },
+          "training_seed": 62012
+        },
+        {
+          "difference": {
+            "decimal": 0.00043594837188720703,
+            "denominator": 8388608,
+            "numerator": 3657
+          },
+          "training_seed": 62013
+        },
+        {
+          "difference": {
+            "decimal": -0.0008535832166671753,
+            "denominator": 67108864,
+            "numerator": -57283
+          },
+          "training_seed": 62014
+        },
+        {
+          "difference": {
+            "decimal": -0.001744091510772705,
+            "denominator": 16777216,
+            "numerator": -29261
+          },
+          "training_seed": 62015
+        },
+        {
+          "difference": {
+            "decimal": -0.0008230865001678467,
+            "denominator": 167772160,
+            "numerator": -138091
+          },
+          "training_seed": 62016
+        },
+        {
+          "difference": {
+            "decimal": -0.00019730031490325928,
+            "denominator": 335544320,
+            "numerator": -66203
+          },
+          "training_seed": 62017
+        },
+        {
+          "difference": {
+            "decimal": 0.00039022862911224364,
+            "denominator": 335544320,
+            "numerator": 130939
+          },
+          "training_seed": 62018
+        },
+        {
+          "difference": {
+            "decimal": 0.0018974602222442626,
+            "denominator": 167772160,
+            "numerator": 318341
+          },
+          "training_seed": 62019
+        },
+        {
+          "difference": {
+            "decimal": -0.00027655065059661865,
+            "denominator": 67108864,
+            "numerator": -18559
+          },
+          "training_seed": 62020
+        }
+      ],
+      "contrast_id": "Warehouse Direct minus Fixed",
+      "dz": {
+        "status": "DEFINED",
+        "value": -0.17095528377127844
+      },
+      "mean_effect": {
+        "decimal": -0.00015455648303031922,
+        "denominator": 6710886400,
+        "numerator": -1037211
+      },
+      "p_value": {
+        "decimal": 0.45260047912597656,
+        "denominator": 524288,
+        "numerator": 237293
+      },
+      "paired_sample_sd": 0.0009040754963567009,
+      "paired_sample_variance": {
+        "decimal": 8.173525031126151e-07,
+        "denominator": 42784196460019712000,
+        "numerator": 34969770070259
+      },
+      "paired_t95": {
+        "confidence": 0.95,
+        "critical_value": 2.0930240544083087,
+        "descriptive_sensitivity": true,
+        "df": 19,
+        "lower": -0.0005776768398164948,
+        "method": "paired_t",
+        "pointwise": true,
+        "scipy_version": "1.17.0",
+        "simultaneous": false,
+        "status": "DEFINED",
+        "upper": 0.0002685638737558564
+      },
+      "test": {
+        "assignments": 1048576,
+        "exceedances": 474586,
+        "monte_carlo_correction": false,
+        "null_assumption": "Joint sign-flip invariance under the paired cluster sign-symmetry/exchangeability null; not a distribution-free test of mean zero alone.",
+        "p_value": {
+          "decimal": 0.45260047912597656,
+          "denominator": 524288,
+          "numerator": 237293
+        },
+        "statistic": "absolute_mean_paired_training_cluster_difference",
+        "statistic_abs_mean": {
+          "decimal": 0.00015455648303031922,
+          "denominator": 6710886400,
+          "numerator": 1037211
+        },
+        "tail": "inclusive_exact_absolute_statistic"
+      },
+      "training_clusters": 20
+    },
+    {
+      "bootstrap95": {
+        "confidence": 0.95,
+        "endpoint_arithmetic": "exact_rational_linear_quantiles_of_integer_scaled_resample_sums",
+        "lower": {
+          "decimal": 0.0005238834284245967,
+          "denominator": 268435456000,
+          "numerator": 140628887
+        },
+        "method": "paired_whole_training_cluster_percentile",
+        "numpy_version": "2.3.5",
+        "pointwise": true,
+        "quantile_method": "linear",
+        "resample_index_sha256": "2a2a79afa4410288ef579e2076ffbb92190b47f720fe00ae19097c4973ae47a8",
+        "resamples": 10000,
+        "rng": "NumPy Generator(PCG64)",
+        "seed": 2117957558758786073,
+        "seed_derivation_utf8": "PCI-M3-CONFIRMATION-ANALYSIS-20261106-v1/Warehouse Direct minus Lagrangian",
+        "simultaneous": false,
+        "upper": {
+          "decimal": 0.001131438050419092,
+          "denominator": 268435456000,
+          "numerator": 303718089
+        }
+      },
+      "cluster_differences": [
+        {
+          "difference": {
+            "decimal": 0.0011984199285507203,
+            "denominator": 335544320,
+            "numerator": 402123
+          },
+          "training_seed": 62001
+        },
+        {
+          "difference": {
+            "decimal": -0.0007183313369750977,
+            "denominator": 41943040,
+            "numerator": -30129
+          },
+          "training_seed": 62002
+        },
+        {
+          "difference": {
+            "decimal": 0.0005575090646743775,
+            "denominator": 335544320,
+            "numerator": 187069
+          },
+          "training_seed": 62003
+        },
+        {
+          "difference": {
+            "decimal": 0.0009945154190063477,
+            "denominator": 41943040,
+            "numerator": 41713
+          },
+          "training_seed": 62004
+        },
+        {
+          "difference": {
+            "decimal": -0.000637468695640564,
+            "denominator": 335544320,
+            "numerator": -213899
+          },
+          "training_seed": 62005
+        },
+        {
+          "difference": {
+            "decimal": 0.0015339970588684082,
+            "denominator": 83886080,
+            "numerator": 128681
+          },
+          "training_seed": 62006
+        },
+        {
+          "difference": {
+            "decimal": 0.0016990840435028077,
+            "denominator": 167772160,
+            "numerator": 285059
+          },
+          "training_seed": 62007
+        },
+        {
+          "difference": {
+            "decimal": 0.0012951910495758057,
+            "denominator": 167772160,
+            "numerator": 217297
+          },
+          "training_seed": 62008
+        },
+        {
+          "difference": {
+            "decimal": -3.35693359375e-05,
+            "denominator": 327680,
+            "numerator": -11
+          },
+          "training_seed": 62009
+        },
+        {
+          "difference": {
+            "decimal": 0.0009505152702331543,
+            "denominator": 16777216,
+            "numerator": 15947
+          },
+          "training_seed": 62010
+        },
+        {
+          "difference": {
+            "decimal": 0.0016427993774414062,
+            "denominator": 5242880,
+            "numerator": 8613
+          },
+          "training_seed": 62011
+        },
+        {
+          "difference": {
+            "decimal": 0.0009554177522659302,
+            "denominator": 67108864,
+            "numerator": 64117
+          },
+          "training_seed": 62012
+        },
+        {
+          "difference": {
+            "decimal": 0.0008718043565750123,
+            "denominator": 335544320,
+            "numerator": 292529
+          },
+          "training_seed": 62013
+        },
+        {
+          "difference": {
+            "decimal": 0.001441243290901184,
+            "denominator": 335544320,
+            "numerator": 483601
+          },
+          "training_seed": 62014
+        },
+        {
+          "difference": {
+            "decimal": 0.0008673608303070068,
+            "denominator": 167772160,
+            "numerator": 145519
+          },
+          "training_seed": 62015
+        },
+        {
+          "difference": {
+            "decimal": 0.0007706820964813232,
+            "denominator": 167772160,
+            "numerator": 129299
+          },
+          "training_seed": 62016
+        },
+        {
+          "difference": {
+            "decimal": 0.0015577614307403565,
+            "denominator": 167772160,
+            "numerator": 261349
+          },
+          "training_seed": 62017
+        },
+        {
+          "difference": {
+            "decimal": 0.00039563179016113283,
+            "denominator": 20971520,
+            "numerator": 8297
+          },
+          "training_seed": 62018
+        },
+        {
+          "difference": {
+            "decimal": 0.0014476001262664795,
+            "denominator": 167772160,
+            "numerator": 242867
+          },
+          "training_seed": 62019
+        },
+        {
+          "difference": {
+            "decimal": -4.335641860961914e-05,
+            "denominator": 83886080,
+            "numerator": -3637
+          },
+          "training_seed": 62020
+        }
+      ],
+      "contrast_id": "Warehouse Direct minus Lagrangian",
+      "dz": {
+        "status": "DEFINED",
+        "value": 1.1580503414476804
+      },
+      "mean_effect": {
+        "decimal": 0.0008373403549194336,
+        "denominator": 209715200,
+        "numerator": 175603
+      },
+      "p_value": {
+        "decimal": 0.0002002716064453125,
+        "denominator": 524288,
+        "numerator": 105
+      },
+      "paired_sample_sd": 0.0007230604102000205,
+      "paired_sample_variance": {
+        "decimal": 5.228163567986219e-07,
+        "denominator": 5348024557502464000,
+        "numerator": 2796034715223
+      },
+      "paired_t95": {
+        "confidence": 0.95,
+        "critical_value": 2.0930240544083087,
+        "descriptive_sensitivity": true,
+        "df": 19,
+        "lower": 0.0004989376662339274,
+        "method": "paired_t",
+        "pointwise": true,
+        "scipy_version": "1.17.0",
+        "simultaneous": false,
+        "status": "DEFINED",
+        "upper": 0.00117574304360494
+      },
+      "test": {
+        "assignments": 1048576,
+        "exceedances": 210,
+        "monte_carlo_correction": false,
+        "null_assumption": "Joint sign-flip invariance under the paired cluster sign-symmetry/exchangeability null; not a distribution-free test of mean zero alone.",
+        "p_value": {
+          "decimal": 0.0002002716064453125,
+          "denominator": 524288,
+          "numerator": 105
+        },
+        "statistic": "absolute_mean_paired_training_cluster_difference",
+        "statistic_abs_mean": {
+          "decimal": 0.0008373403549194336,
+          "denominator": 209715200,
+          "numerator": 175603
+        },
+        "tail": "inclusive_exact_absolute_statistic"
+      },
+      "training_clusters": 20
+    },
+    {
+      "bootstrap95": {
+        "confidence": 0.95,
+        "endpoint_arithmetic": "exact_rational_linear_quantiles_of_integer_scaled_resample_sums",
+        "lower": {
+          "decimal": -0.008789509937167168,
+          "denominator": 67108864000,
+          "numerator": -589854027
+        },
+        "method": "paired_whole_training_cluster_percentile",
+        "numpy_version": "2.3.5",
+        "pointwise": true,
+        "quantile_method": "linear",
+        "resample_index_sha256": "b506bdd67a828678cc583f7aa86a6c3403068431bd2aa90f31502f5ea93d5f58",
+        "resamples": 10000,
+        "rng": "NumPy Generator(PCG64)",
+        "seed": 1752702765143026456,
+        "seed_derivation_utf8": "PCI-M3-CONFIRMATION-ANALYSIS-20261106-v1/Warehouse Direct minus shield-aware",
+        "simultaneous": false,
+        "upper": {
+          "decimal": -0.008310543905943633,
+          "denominator": 268435456000,
+          "numerator": -2230844643
+        }
+      },
+      "cluster_differences": [
+        {
+          "difference": {
+            "decimal": -0.008556461334228516,
+            "denominator": 10485760,
+            "numerator": -89721
+          },
+          "training_seed": 62001
+        },
+        {
+          "difference": {
+            "decimal": -0.008238095045089721,
+            "denominator": 167772160,
+            "numerator": -1382123
+          },
+          "training_seed": 62002
+        },
+        {
+          "difference": {
+            "decimal": -0.008086583018302918,
+            "denominator": 335544320,
+            "numerator": -2713407
+          },
+          "training_seed": 62003
+        },
+        {
+          "difference": {
+            "decimal": -0.0086189866065979,
+            "denominator": 83886080,
+            "numerator": -723013
+          },
+          "training_seed": 62004
+        },
+        {
+          "difference": {
+            "decimal": -0.009386003017425537,
+            "denominator": 16777216,
+            "numerator": -157471
+          },
+          "training_seed": 62005
+        },
+        {
+          "difference": {
+            "decimal": -0.009085685014724731,
+            "denominator": 33554432,
+            "numerator": -304865
+          },
+          "training_seed": 62006
+        },
+        {
+          "difference": {
+            "decimal": -0.0076858818531036375,
+            "denominator": 167772160,
+            "numerator": -1289477
+          },
+          "training_seed": 62007
+        },
+        {
+          "difference": {
+            "decimal": -0.008355510234832764,
+            "denominator": 83886080,
+            "numerator": -700911
+          },
+          "training_seed": 62008
+        },
+        {
+          "difference": {
+            "decimal": -0.009504866600036622,
+            "denominator": 41943040,
+            "numerator": -398663
+          },
+          "training_seed": 62009
+        },
+        {
+          "difference": {
+            "decimal": -0.008080151677131654,
+            "denominator": 335544320,
+            "numerator": -2711249
+          },
+          "training_seed": 62010
+        },
+        {
+          "difference": {
+            "decimal": -0.00842345952987671,
+            "denominator": 83886080,
+            "numerator": -706611
+          },
+          "training_seed": 62011
+        },
+        {
+          "difference": {
+            "decimal": -0.009044793248176575,
+            "denominator": 335544320,
+            "numerator": -3034929
+          },
+          "training_seed": 62012
+        },
+        {
+          "difference": {
+            "decimal": -0.007986882328987121,
+            "denominator": 335544320,
+            "numerator": -2679953
+          },
+          "training_seed": 62013
+        },
+        {
+          "difference": {
+            "decimal": -0.00836697518825531,
+            "denominator": 335544320,
+            "numerator": -2807491
+          },
+          "training_seed": 62014
+        },
+        {
+          "difference": {
+            "decimal": -0.0095253586769104,
+            "denominator": 16777216,
+            "numerator": -159809
+          },
+          "training_seed": 62015
+        },
+        {
+          "difference": {
+            "decimal": -0.008488771319389344,
+            "denominator": 335544320,
+            "numerator": -2848359
+          },
+          "training_seed": 62016
+        },
+        {
+          "difference": {
+            "decimal": -0.008918127417564392,
+            "denominator": 335544320,
+            "numerator": -2992427
+          },
+          "training_seed": 62017
+        },
+        {
+          "difference": {
+            "decimal": -0.008182740211486817,
+            "denominator": 41943040,
+            "numerator": -343209
+          },
+          "training_seed": 62018
+        },
+        {
+          "difference": {
+            "decimal": -0.0075909137725830075,
+            "denominator": 20971520,
+            "numerator": -159193
+          },
+          "training_seed": 62019
+        },
+        {
+          "difference": {
+            "decimal": -0.008802944421768188,
+            "denominator": 167772160,
+            "numerator": -1476889
+          },
+          "training_seed": 62020
+        }
+      ],
+      "contrast_id": "Warehouse Direct minus shield-aware",
+      "dz": {
+        "status": "DEFINED",
+        "value": -15.157798831567604
+      },
+      "mean_effect": {
+        "decimal": -0.008546459525823592,
+        "denominator": 6710886400,
+        "numerator": -57354319
+      },
+      "p_value": {
+        "decimal": 1.9073486328125e-06,
+        "denominator": 524288,
+        "numerator": 1
+      },
+      "paired_sample_sd": 0.0005638324944664625,
+      "paired_sample_variance": {
+        "decimal": 3.179070818162734e-07,
+        "denominator": 42784196460019712000,
+        "numerator": 13601399044459
+      },
+      "paired_t95": {
+        "confidence": 0.95,
+        "critical_value": 2.0930240544083087,
+        "descriptive_sensitivity": true,
+        "df": 19,
+        "lower": -0.008810341256041576,
+        "method": "paired_t",
+        "pointwise": true,
+        "scipy_version": "1.17.0",
+        "simultaneous": false,
+        "status": "DEFINED",
+        "upper": -0.008282577795605608
+      },
+      "test": {
+        "assignments": 1048576,
+        "exceedances": 2,
+        "monte_carlo_correction": false,
+        "null_assumption": "Joint sign-flip invariance under the paired cluster sign-symmetry/exchangeability null; not a distribution-free test of mean zero alone.",
+        "p_value": {
+          "decimal": 1.9073486328125e-06,
+          "denominator": 524288,
+          "numerator": 1
+        },
+        "statistic": "absolute_mean_paired_training_cluster_difference",
+        "statistic_abs_mean": {
+          "decimal": 0.008546459525823592,
+          "denominator": 6710886400,
+          "numerator": 57354319
+        },
+        "tail": "inclusive_exact_absolute_statistic"
+      },
+      "training_clusters": 20
+    }
+  ],
+  "endpoint_data": {
+    "cost_limit": {
+      "decimal": 0.05,
+      "denominator": 20,
+      "numerator": 1
+    },
+    "family_cluster_hypervolumes": [
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01833623945713043,
+          "denominator": 335544320,
+          "numerator": 6152621
+        },
+        "training_seed": 62001
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017261409759521486,
+          "denominator": 10485760,
+          "numerator": 180999
+        },
+        "training_seed": 62001
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016062989830970764,
+          "denominator": 67108864,
+          "numerator": 1077969
+        },
+        "training_seed": 62001
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02581787109375,
+          "denominator": 16384,
+          "numerator": 423
+        },
+        "training_seed": 62001
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01683211326599121,
+          "denominator": 4194304,
+          "numerator": 70599
+        },
+        "training_seed": 62002
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.016505557298660278,
+          "denominator": 167772160,
+          "numerator": 2769173
+        },
+        "training_seed": 62002
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.017223888635635377,
+          "denominator": 167772160,
+          "numerator": 2889689
+        },
+        "training_seed": 62002
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02474365234375,
+          "denominator": 81920,
+          "numerator": 2027
+        },
+        "training_seed": 62002
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.016480791568756103,
+          "denominator": 83886080,
+          "numerator": 1382509
+        },
+        "training_seed": 62003
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017304041981697084,
+          "denominator": 335544320,
+          "numerator": 5806273
+        },
+        "training_seed": 62003
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016746532917022706,
+          "denominator": 83886080,
+          "numerator": 1404801
+        },
+        "training_seed": 62003
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.025390625,
+          "denominator": 512,
+          "numerator": 13
+        },
+        "training_seed": 62003
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.017220526933670044,
+          "denominator": 33554432,
+          "numerator": 577825
+        },
+        "training_seed": 62004
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.0167716383934021,
+          "denominator": 83886080,
+          "numerator": 1406907
+        },
+        "training_seed": 62004
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.015777122974395753,
+          "denominator": 83886080,
+          "numerator": 1323481
+        },
+        "training_seed": 62004
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.025390625,
+          "denominator": 512,
+          "numerator": 13
+        },
+        "training_seed": 62004
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.017262959480285646,
+          "denominator": 41943040,
+          "numerator": 724061
+        },
+        "training_seed": 62005
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.016224348545074464,
+          "denominator": 83886080,
+          "numerator": 1360997
+        },
+        "training_seed": 62005
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016861817240715025,
+          "denominator": 335544320,
+          "numerator": 5657887
+        },
+        "training_seed": 62005
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.0256103515625,
+          "denominator": 40960,
+          "numerator": 1049
+        },
+        "training_seed": 62005
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.015929365158081056,
+          "denominator": 20971520,
+          "numerator": 334063
+        },
+        "training_seed": 62006
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.01612183451652527,
+          "denominator": 33554432,
+          "numerator": 540959
+        },
+        "training_seed": 62006
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.01458783745765686,
+          "denominator": 167772160,
+          "numerator": 2447433
+        },
+        "training_seed": 62006
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02520751953125,
+          "denominator": 16384,
+          "numerator": 413
+        },
+        "training_seed": 62006
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01729837656021118,
+          "denominator": 83886080,
+          "numerator": 1451093
+        },
+        "training_seed": 62007
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.01782681345939636,
+          "denominator": 167772160,
+          "numerator": 2990843
+        },
+        "training_seed": 62007
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016127729415893556,
+          "denominator": 20971520,
+          "numerator": 338223
+        },
+        "training_seed": 62007
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.0255126953125,
+          "denominator": 8192,
+          "numerator": 209
+        },
+        "training_seed": 62007
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.015927806496620178,
+          "denominator": 67108864,
+          "numerator": 1068897
+        },
+        "training_seed": 62008
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017083942890167236,
+          "denominator": 16777216,
+          "numerator": 286621
+        },
+        "training_seed": 62008
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.01578875184059143,
+          "denominator": 167772160,
+          "numerator": 2648913
+        },
+        "training_seed": 62008
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.025439453125,
+          "denominator": 20480,
+          "numerator": 521
+        },
+        "training_seed": 62008
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.017523682117462157,
+          "denominator": 83886080,
+          "numerator": 1469993
+        },
+        "training_seed": 62009
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.016020035743713378,
+          "denominator": 41943040,
+          "numerator": 671929
+        },
+        "training_seed": 62009
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016053605079650878,
+          "denominator": 41943040,
+          "numerator": 673337
+        },
+        "training_seed": 62009
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02552490234375,
+          "denominator": 81920,
+          "numerator": 2091
+        },
+        "training_seed": 62009
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.017157313227653504,
+          "denominator": 335544320,
+          "numerator": 5757039
+        },
+        "training_seed": 62010
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017359301447868347,
+          "denominator": 67108864,
+          "numerator": 1164963
+        },
+        "training_seed": 62010
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016408786177635193,
+          "denominator": 67108864,
+          "numerator": 1101175
+        },
+        "training_seed": 62010
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.025439453125,
+          "denominator": 20480,
+          "numerator": 521
+        },
+        "training_seed": 62010
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.018037211894989014,
+          "denominator": 83886080,
+          "numerator": 1513071
+        },
+        "training_seed": 62011
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017479860782623292,
+          "denominator": 83886080,
+          "numerator": 1466317
+        },
+        "training_seed": 62011
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.015837061405181884,
+          "denominator": 83886080,
+          "numerator": 1328509
+        },
+        "training_seed": 62011
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.0259033203125,
+          "denominator": 40960,
+          "numerator": 1061
+        },
+        "training_seed": 62011
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.016340455412864684,
+          "denominator": 335544320,
+          "numerator": 5482947
+        },
+        "training_seed": 62012
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.016467902064323425,
+          "denominator": 335544320,
+          "numerator": 5525711
+        },
+        "training_seed": 62012
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.015512484312057494,
+          "denominator": 167772160,
+          "numerator": 2602563
+        },
+        "training_seed": 62012
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.0255126953125,
+          "denominator": 8192,
+          "numerator": 209
+        },
+        "training_seed": 62012
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01726076304912567,
+          "denominator": 335544320,
+          "numerator": 5791751
+        },
+        "training_seed": 62013
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017696711421012878,
+          "denominator": 335544320,
+          "numerator": 5938031
+        },
+        "training_seed": 62013
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016824907064437865,
+          "denominator": 167772160,
+          "numerator": 2822751
+        },
+        "training_seed": 62013
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02568359375,
+          "denominator": 10240,
+          "numerator": 263
+        },
+        "training_seed": 62013
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.017633092403411866,
+          "denominator": 83886080,
+          "numerator": 1479171
+        },
+        "training_seed": 62014
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.01677950918674469,
+          "denominator": 335544320,
+          "numerator": 5630269
+        },
+        "training_seed": 62014
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.015338265895843506,
+          "denominator": 83886080,
+          "numerator": 1286667
+        },
+        "training_seed": 62014
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.025146484375,
+          "denominator": 4096,
+          "numerator": 103
+        },
+        "training_seed": 62014
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.018292951583862304,
+          "denominator": 20971520,
+          "numerator": 383631
+        },
+        "training_seed": 62015
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.0165488600730896,
+          "denominator": 83886080,
+          "numerator": 1388219
+        },
+        "training_seed": 62015
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.015681499242782594,
+          "denominator": 167772160,
+          "numerator": 2630919
+        },
+        "training_seed": 62015
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02607421875,
+          "denominator": 10240,
+          "numerator": 267
+        },
+        "training_seed": 62015
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.017969080805778505,
+          "denominator": 335544320,
+          "numerator": 6029423
+        },
+        "training_seed": 62016
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017145994305610656,
+          "denominator": 335544320,
+          "numerator": 5753241
+        },
+        "training_seed": 62016
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016375312209129335,
+          "denominator": 335544320,
+          "numerator": 5494643
+        },
+        "training_seed": 62016
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.025634765625,
+          "denominator": 4096,
+          "numerator": 105
+        },
+        "training_seed": 62016
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01706042289733887,
+          "denominator": 20971520,
+          "numerator": 357783
+        },
+        "training_seed": 62017
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.016863122582435608,
+          "denominator": 67108864,
+          "numerator": 1131665
+        },
+        "training_seed": 62017
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.015305361151695252,
+          "denominator": 335544320,
+          "numerator": 5135627
+        },
+        "training_seed": 62017
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02578125,
+          "denominator": 1280,
+          "numerator": 33
+        },
+        "training_seed": 62017
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01690310537815094,
+          "denominator": 335544320,
+          "numerator": 5671741
+        },
+        "training_seed": 62018
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.017293334007263184,
+          "denominator": 8388608,
+          "numerator": 145067
+        },
+        "training_seed": 62018
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016897702217102052,
+          "denominator": 41943040,
+          "numerator": 708741
+        },
+        "training_seed": 62018
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02547607421875,
+          "denominator": 81920,
+          "numerator": 2087
+        },
+        "training_seed": 62018
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01645156741142273,
+          "denominator": 33554432,
+          "numerator": 552023
+        },
+        "training_seed": 62019
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.01834902763366699,
+          "denominator": 20971520,
+          "numerator": 384807
+        },
+        "training_seed": 62019
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.016901427507400514,
+          "denominator": 167772160,
+          "numerator": 2835589
+        },
+        "training_seed": 62019
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.02593994140625,
+          "denominator": 16384,
+          "numerator": 425
+        },
+        "training_seed": 62019
+      },
+      {
+        "family": "fixed",
+        "hypervolume": {
+          "decimal": 0.01613180935382843,
+          "denominator": 335544320,
+          "numerator": 5412937
+        },
+        "training_seed": 62020
+      },
+      {
+        "family": "direct",
+        "hypervolume": {
+          "decimal": 0.01585525870323181,
+          "denominator": 167772160,
+          "numerator": 2660071
+        },
+        "training_seed": 62020
+      },
+      {
+        "family": "lagrangian",
+        "hypervolume": {
+          "decimal": 0.01589861512184143,
+          "denominator": 33554432,
+          "numerator": 533469
+        },
+        "training_seed": 62020
+      },
+      {
+        "family": "shieldaware",
+        "hypervolume": {
+          "decimal": 0.024658203125,
+          "denominator": 4096,
+          "numerator": 101
+        },
+        "training_seed": 62020
+      }
+    ],
+    "policy_points": [
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00634765625,
+          "denominator": 2048,
+          "numerator": 13
+        },
+        "deliveries": 1444,
+        "family": "direct",
+        "institutional_replacements": 520,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.017626953125,
+          "denominator": 20480,
+          "numerator": 361
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0014404296875,
+          "denominator": 40960,
+          "numerator": 59
+        },
+        "deliveries": 1456,
+        "family": "direct",
+        "institutional_replacements": 118,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.0177734375,
+          "denominator": 5120,
+          "numerator": 91
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0033935546875,
+          "denominator": 40960,
+          "numerator": 139
+        },
+        "deliveries": 1537,
+        "family": "fixed",
+        "institutional_replacements": 278,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.01876220703125,
+          "denominator": 81920,
+          "numerator": 1537
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00079345703125,
+          "denominator": 16384,
+          "numerator": 13
+        },
+        "deliveries": 1335,
+        "family": "fixed",
+        "institutional_replacements": 65,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.01629638671875,
+          "denominator": 16384,
+          "numerator": 267
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00118408203125,
+          "denominator": 81920,
+          "numerator": 97
+        },
+        "deliveries": 1030,
+        "family": "lagrangian",
+        "institutional_replacements": 97,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.0125732421875,
+          "denominator": 8192,
+          "numerator": 103
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.00863037109375,
+          "denominator": 81920,
+          "numerator": 707
+        },
+        "deliveries": 1405,
+        "family": "lagrangian",
+        "institutional_replacements": 707,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.01715087890625,
+          "denominator": 16384,
+          "numerator": 281
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2082,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.0254150390625,
+          "denominator": 40960,
+          "numerator": 1041
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2115,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62001,
+        "utility": {
+          "decimal": 0.02581787109375,
+          "denominator": 16384,
+          "numerator": 423
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00438232421875,
+          "denominator": 81920,
+          "numerator": 359
+        },
+        "deliveries": 1390,
+        "family": "direct",
+        "institutional_replacements": 359,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.0169677734375,
+          "denominator": 8192,
+          "numerator": 139
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00128173828125,
+          "denominator": 16384,
+          "numerator": 21
+        },
+        "deliveries": 1354,
+        "family": "direct",
+        "institutional_replacements": 105,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.0165283203125,
+          "denominator": 40960,
+          "numerator": 677
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0028076171875,
+          "denominator": 8192,
+          "numerator": 23
+        },
+        "deliveries": 1413,
+        "family": "fixed",
+        "institutional_replacements": 230,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.01724853515625,
+          "denominator": 81920,
+          "numerator": 1413
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.000927734375,
+          "denominator": 20480,
+          "numerator": 19
+        },
+        "deliveries": 1203,
+        "family": "fixed",
+        "institutional_replacements": 76,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.01468505859375,
+          "denominator": 81920,
+          "numerator": 1203
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00125732421875,
+          "denominator": 81920,
+          "numerator": 103
+        },
+        "deliveries": 1144,
+        "family": "lagrangian",
+        "institutional_replacements": 103,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.01396484375,
+          "denominator": 10240,
+          "numerator": 143
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01046142578125,
+          "denominator": 81920,
+          "numerator": 857
+        },
+        "deliveries": 1518,
+        "family": "lagrangian",
+        "institutional_replacements": 857,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.0185302734375,
+          "denominator": 40960,
+          "numerator": 759
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2026,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.0247314453125,
+          "denominator": 40960,
+          "numerator": 1013
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2027,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62002,
+        "utility": {
+          "decimal": 0.02474365234375,
+          "denominator": 81920,
+          "numerator": 2027
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00426025390625,
+          "denominator": 81920,
+          "numerator": 349
+        },
+        "deliveries": 1451,
+        "family": "direct",
+        "institutional_replacements": 349,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.01771240234375,
+          "denominator": 81920,
+          "numerator": 1451
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00093994140625,
+          "denominator": 81920,
+          "numerator": 77
+        },
+        "deliveries": 1358,
+        "family": "direct",
+        "institutional_replacements": 77,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.0165771484375,
+          "denominator": 40960,
+          "numerator": 679
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.00386962890625,
+          "denominator": 81920,
+          "numerator": 317
+        },
+        "deliveries": 1388,
+        "family": "fixed",
+        "institutional_replacements": 317,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.016943359375,
+          "denominator": 20480,
+          "numerator": 347
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00054931640625,
+          "denominator": 16384,
+          "numerator": 9
+        },
+        "deliveries": 1047,
+        "family": "fixed",
+        "institutional_replacements": 45,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.01278076171875,
+          "denominator": 81920,
+          "numerator": 1047
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0020263671875,
+          "denominator": 40960,
+          "numerator": 83
+        },
+        "deliveries": 1130,
+        "family": "lagrangian",
+        "institutional_replacements": 166,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.0137939453125,
+          "denominator": 8192,
+          "numerator": 113
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01015625,
+          "denominator": 1280,
+          "numerator": 13
+        },
+        "deliveries": 1491,
+        "family": "lagrangian",
+        "institutional_replacements": 832,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.01820068359375,
+          "denominator": 81920,
+          "numerator": 1491
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2080,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.025390625,
+          "denominator": 512,
+          "numerator": 13
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2070,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62003,
+        "utility": {
+          "decimal": 0.0252685546875,
+          "denominator": 8192,
+          "numerator": 207
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.004150390625,
+          "denominator": 4096,
+          "numerator": 17
+        },
+        "deliveries": 1353,
+        "family": "direct",
+        "institutional_replacements": 340,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.01651611328125,
+          "denominator": 81920,
+          "numerator": 1353
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0010009765625,
+          "denominator": 40960,
+          "numerator": 41
+        },
+        "deliveries": 1402,
+        "family": "direct",
+        "institutional_replacements": 82,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.0171142578125,
+          "denominator": 40960,
+          "numerator": 701
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.00279541015625,
+          "denominator": 81920,
+          "numerator": 229
+        },
+        "deliveries": 1324,
+        "family": "fixed",
+        "institutional_replacements": 229,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.016162109375,
+          "denominator": 20480,
+          "numerator": 331
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00135498046875,
+          "denominator": 81920,
+          "numerator": 111
+        },
+        "deliveries": 1450,
+        "family": "fixed",
+        "institutional_replacements": 111,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.0177001953125,
+          "denominator": 8192,
+          "numerator": 145
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0016357421875,
+          "denominator": 40960,
+          "numerator": 67
+        },
+        "deliveries": 1127,
+        "family": "lagrangian",
+        "institutional_replacements": 134,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.01375732421875,
+          "denominator": 81920,
+          "numerator": 1127
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.00953369140625,
+          "denominator": 81920,
+          "numerator": 781
+        },
+        "deliveries": 1377,
+        "family": "lagrangian",
+        "institutional_replacements": 781,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.01680908203125,
+          "denominator": 81920,
+          "numerator": 1377
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2080,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.025390625,
+          "denominator": 512,
+          "numerator": 13
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2022,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62004,
+        "utility": {
+          "decimal": 0.0246826171875,
+          "denominator": 40960,
+          "numerator": 1011
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.002880859375,
+          "denominator": 20480,
+          "numerator": 59
+        },
+        "deliveries": 1360,
+        "family": "direct",
+        "institutional_replacements": 236,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.0166015625,
+          "denominator": 1024,
+          "numerator": 17
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00084228515625,
+          "denominator": 81920,
+          "numerator": 69
+        },
+        "deliveries": 1164,
+        "family": "direct",
+        "institutional_replacements": 69,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.014208984375,
+          "denominator": 20480,
+          "numerator": 291
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.002392578125,
+          "denominator": 20480,
+          "numerator": 49
+        },
+        "deliveries": 1448,
+        "family": "fixed",
+        "institutional_replacements": 196,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.01767578125,
+          "denominator": 10240,
+          "numerator": 181
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.001123046875,
+          "denominator": 20480,
+          "numerator": 23
+        },
+        "deliveries": 1397,
+        "family": "fixed",
+        "institutional_replacements": 92,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.01705322265625,
+          "denominator": 81920,
+          "numerator": 1397
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.001025390625,
+          "denominator": 20480,
+          "numerator": 21
+        },
+        "deliveries": 1140,
+        "family": "lagrangian",
+        "institutional_replacements": 84,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.013916015625,
+          "denominator": 4096,
+          "numerator": 57
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01666259765625,
+          "denominator": 16384,
+          "numerator": 273
+        },
+        "deliveries": 1537,
+        "family": "lagrangian",
+        "institutional_replacements": 1365,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.01876220703125,
+          "denominator": 81920,
+          "numerator": 1537
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2098,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.0256103515625,
+          "denominator": 40960,
+          "numerator": 1049
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2024,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62005,
+        "utility": {
+          "decimal": 0.02470703125,
+          "denominator": 10240,
+          "numerator": 253
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.0025390625,
+          "denominator": 5120,
+          "numerator": 13
+        },
+        "deliveries": 1345,
+        "family": "direct",
+        "institutional_replacements": 208,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.01641845703125,
+          "denominator": 16384,
+          "numerator": 269
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0009033203125,
+          "denominator": 40960,
+          "numerator": 37
+        },
+        "deliveries": 1345,
+        "family": "direct",
+        "institutional_replacements": 74,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.01641845703125,
+          "denominator": 16384,
+          "numerator": 269
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0020751953125,
+          "denominator": 8192,
+          "numerator": 17
+        },
+        "deliveries": 1325,
+        "family": "fixed",
+        "institutional_replacements": 170,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.01617431640625,
+          "denominator": 16384,
+          "numerator": 265
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00069580078125,
+          "denominator": 81920,
+          "numerator": 57
+        },
+        "deliveries": 1266,
+        "family": "fixed",
+        "institutional_replacements": 57,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.0154541015625,
+          "denominator": 40960,
+          "numerator": 633
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0018310546875,
+          "denominator": 8192,
+          "numerator": 15
+        },
+        "deliveries": 1146,
+        "family": "lagrangian",
+        "institutional_replacements": 150,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.0139892578125,
+          "denominator": 40960,
+          "numerator": 573
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.0066650390625,
+          "denominator": 40960,
+          "numerator": 273
+        },
+        "deliveries": 1251,
+        "family": "lagrangian",
+        "institutional_replacements": 546,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.01527099609375,
+          "denominator": 81920,
+          "numerator": 1251
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2057,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.02510986328125,
+          "denominator": 81920,
+          "numerator": 2057
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2065,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62006,
+        "utility": {
+          "decimal": 0.02520751953125,
+          "denominator": 16384,
+          "numerator": 413
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00633544921875,
+          "denominator": 81920,
+          "numerator": 519
+        },
+        "deliveries": 1514,
+        "family": "direct",
+        "institutional_replacements": 519,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.0184814453125,
+          "denominator": 40960,
+          "numerator": 757
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0007080078125,
+          "denominator": 40960,
+          "numerator": 29
+        },
+        "deliveries": 1228,
+        "family": "direct",
+        "institutional_replacements": 58,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.014990234375,
+          "denominator": 20480,
+          "numerator": 307
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.003369140625,
+          "denominator": 20480,
+          "numerator": 69
+        },
+        "deliveries": 1447,
+        "family": "fixed",
+        "institutional_replacements": 276,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.01766357421875,
+          "denominator": 81920,
+          "numerator": 1447
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00079345703125,
+          "denominator": 16384,
+          "numerator": 13
+        },
+        "deliveries": 1312,
+        "family": "fixed",
+        "institutional_replacements": 65,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.016015625,
+          "denominator": 2560,
+          "numerator": 41
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00283203125,
+          "denominator": 10240,
+          "numerator": 29
+        },
+        "deliveries": 1315,
+        "family": "lagrangian",
+        "institutional_replacements": 232,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.01605224609375,
+          "denominator": 16384,
+          "numerator": 263
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01121826171875,
+          "denominator": 81920,
+          "numerator": 919
+        },
+        "deliveries": 1419,
+        "family": "lagrangian",
+        "institutional_replacements": 919,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.01732177734375,
+          "denominator": 81920,
+          "numerator": 1419
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2069,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.02525634765625,
+          "denominator": 81920,
+          "numerator": 2069
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2090,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62007,
+        "utility": {
+          "decimal": 0.0255126953125,
+          "denominator": 8192,
+          "numerator": 209
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.006396484375,
+          "denominator": 20480,
+          "numerator": 131
+        },
+        "deliveries": 1433,
+        "family": "direct",
+        "institutional_replacements": 524,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.01749267578125,
+          "denominator": 81920,
+          "numerator": 1433
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00113525390625,
+          "denominator": 81920,
+          "numerator": 93
+        },
+        "deliveries": 1424,
+        "family": "direct",
+        "institutional_replacements": 93,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.0173828125,
+          "denominator": 5120,
+          "numerator": 89
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.004541015625,
+          "denominator": 20480,
+          "numerator": 93
+        },
+        "deliveries": 1328,
+        "family": "fixed",
+        "institutional_replacements": 372,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.0162109375,
+          "denominator": 5120,
+          "numerator": 83
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00074462890625,
+          "denominator": 81920,
+          "numerator": 61
+        },
+        "deliveries": 1283,
+        "family": "fixed",
+        "institutional_replacements": 61,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.01566162109375,
+          "denominator": 81920,
+          "numerator": 1283
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00128173828125,
+          "denominator": 16384,
+          "numerator": 21
+        },
+        "deliveries": 1006,
+        "family": "lagrangian",
+        "institutional_replacements": 105,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.0122802734375,
+          "denominator": 40960,
+          "numerator": 503
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.0087890625,
+          "denominator": 1024,
+          "numerator": 9
+        },
+        "deliveries": 1386,
+        "family": "lagrangian",
+        "institutional_replacements": 720,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.0169189453125,
+          "denominator": 40960,
+          "numerator": 693
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2084,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.025439453125,
+          "denominator": 20480,
+          "numerator": 521
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2068,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62008,
+        "utility": {
+          "decimal": 0.025244140625,
+          "denominator": 20480,
+          "numerator": 517
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.0040283203125,
+          "denominator": 8192,
+          "numerator": 33
+        },
+        "deliveries": 1330,
+        "family": "direct",
+        "institutional_replacements": 330,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.0162353515625,
+          "denominator": 8192,
+          "numerator": 133
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.000537109375,
+          "denominator": 20480,
+          "numerator": 11
+        },
+        "deliveries": 1282,
+        "family": "direct",
+        "institutional_replacements": 44,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.0156494140625,
+          "denominator": 40960,
+          "numerator": 641
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0031982421875,
+          "denominator": 40960,
+          "numerator": 131
+        },
+        "deliveries": 1422,
+        "family": "fixed",
+        "institutional_replacements": 262,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.0173583984375,
+          "denominator": 40960,
+          "numerator": 711
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00189208984375,
+          "denominator": 16384,
+          "numerator": 31
+        },
+        "deliveries": 1492,
+        "family": "fixed",
+        "institutional_replacements": 155,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.018212890625,
+          "denominator": 20480,
+          "numerator": 373
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00164794921875,
+          "denominator": 16384,
+          "numerator": 27
+        },
+        "deliveries": 1091,
+        "family": "lagrangian",
+        "institutional_replacements": 135,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.01331787109375,
+          "denominator": 81920,
+          "numerator": 1091
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.00592041015625,
+          "denominator": 16384,
+          "numerator": 97
+        },
+        "deliveries": 1386,
+        "family": "lagrangian",
+        "institutional_replacements": 485,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.0169189453125,
+          "denominator": 40960,
+          "numerator": 693
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2035,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.02484130859375,
+          "denominator": 16384,
+          "numerator": 407
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2091,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62009,
+        "utility": {
+          "decimal": 0.02552490234375,
+          "denominator": 81920,
+          "numerator": 2091
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00411376953125,
+          "denominator": 81920,
+          "numerator": 337
+        },
+        "deliveries": 1455,
+        "family": "direct",
+        "institutional_replacements": 337,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.01776123046875,
+          "denominator": 16384,
+          "numerator": 291
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0010009765625,
+          "denominator": 40960,
+          "numerator": 41
+        },
+        "deliveries": 1394,
+        "family": "direct",
+        "institutional_replacements": 82,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.0170166015625,
+          "denominator": 40960,
+          "numerator": 697
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.00328369140625,
+          "denominator": 81920,
+          "numerator": 269
+        },
+        "deliveries": 1461,
+        "family": "fixed",
+        "institutional_replacements": 269,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.01783447265625,
+          "denominator": 81920,
+          "numerator": 1461
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00167236328125,
+          "denominator": 81920,
+          "numerator": 137
+        },
+        "deliveries": 1256,
+        "family": "fixed",
+        "institutional_replacements": 137,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.01533203125,
+          "denominator": 10240,
+          "numerator": 157
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0014404296875,
+          "denominator": 40960,
+          "numerator": 59
+        },
+        "deliveries": 1240,
+        "family": "lagrangian",
+        "institutional_replacements": 118,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.01513671875,
+          "denominator": 2048,
+          "numerator": 31
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01258544921875,
+          "denominator": 81920,
+          "numerator": 1031
+        },
+        "deliveries": 1427,
+        "family": "lagrangian",
+        "institutional_replacements": 1031,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.01741943359375,
+          "denominator": 81920,
+          "numerator": 1427
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2078,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.0253662109375,
+          "denominator": 40960,
+          "numerator": 1039
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2084,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62010,
+        "utility": {
+          "decimal": 0.025439453125,
+          "denominator": 20480,
+          "numerator": 521
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.0033203125,
+          "denominator": 5120,
+          "numerator": 17
+        },
+        "deliveries": 1472,
+        "family": "direct",
+        "institutional_replacements": 272,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.01796875,
+          "denominator": 1280,
+          "numerator": 23
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.001123046875,
+          "denominator": 20480,
+          "numerator": 23
+        },
+        "deliveries": 1313,
+        "family": "direct",
+        "institutional_replacements": 92,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.01602783203125,
+          "denominator": 81920,
+          "numerator": 1313
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0047119140625,
+          "denominator": 40960,
+          "numerator": 193
+        },
+        "deliveries": 1514,
+        "family": "fixed",
+        "institutional_replacements": 386,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.0184814453125,
+          "denominator": 40960,
+          "numerator": 757
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00078125,
+          "denominator": 1280,
+          "numerator": 1
+        },
+        "deliveries": 1352,
+        "family": "fixed",
+        "institutional_replacements": 64,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.01650390625,
+          "denominator": 10240,
+          "numerator": 169
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0016357421875,
+          "denominator": 40960,
+          "numerator": 67
+        },
+        "deliveries": 1190,
+        "family": "lagrangian",
+        "institutional_replacements": 134,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.0145263671875,
+          "denominator": 8192,
+          "numerator": 119
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.007958984375,
+          "denominator": 20480,
+          "numerator": 163
+        },
+        "deliveries": 1364,
+        "family": "lagrangian",
+        "institutional_replacements": 652,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.016650390625,
+          "denominator": 20480,
+          "numerator": 341
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2108,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.025732421875,
+          "denominator": 20480,
+          "numerator": 527
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2122,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62011,
+        "utility": {
+          "decimal": 0.0259033203125,
+          "denominator": 40960,
+          "numerator": 1061
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00352783203125,
+          "denominator": 81920,
+          "numerator": 289
+        },
+        "deliveries": 1393,
+        "family": "direct",
+        "institutional_replacements": 289,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.01700439453125,
+          "denominator": 81920,
+          "numerator": 1393
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00157470703125,
+          "denominator": 81920,
+          "numerator": 129
+        },
+        "deliveries": 1391,
+        "family": "direct",
+        "institutional_replacements": 129,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.01697998046875,
+          "denominator": 81920,
+          "numerator": 1391
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.003076171875,
+          "denominator": 20480,
+          "numerator": 63
+        },
+        "deliveries": 1393,
+        "family": "fixed",
+        "institutional_replacements": 252,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.01700439453125,
+          "denominator": 81920,
+          "numerator": 1393
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00169677734375,
+          "denominator": 81920,
+          "numerator": 139
+        },
+        "deliveries": 1135,
+        "family": "fixed",
+        "institutional_replacements": 139,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.01385498046875,
+          "denominator": 16384,
+          "numerator": 227
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.001708984375,
+          "denominator": 4096,
+          "numerator": 7
+        },
+        "deliveries": 1158,
+        "family": "lagrangian",
+        "institutional_replacements": 140,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.0141357421875,
+          "denominator": 40960,
+          "numerator": 579
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.02000732421875,
+          "denominator": 81920,
+          "numerator": 1639
+        },
+        "deliveries": 1412,
+        "family": "lagrangian",
+        "institutional_replacements": 1639,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.017236328125,
+          "denominator": 20480,
+          "numerator": 353
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2090,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.0255126953125,
+          "denominator": 8192,
+          "numerator": 209
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2083,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62012,
+        "utility": {
+          "decimal": 0.02542724609375,
+          "denominator": 81920,
+          "numerator": 2083
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00523681640625,
+          "denominator": 81920,
+          "numerator": 429
+        },
+        "deliveries": 1497,
+        "family": "direct",
+        "institutional_replacements": 429,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.01827392578125,
+          "denominator": 81920,
+          "numerator": 1497
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00118408203125,
+          "denominator": 81920,
+          "numerator": 97
+        },
+        "deliveries": 1351,
+        "family": "direct",
+        "institutional_replacements": 97,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.01649169921875,
+          "denominator": 81920,
+          "numerator": 1351
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.003076171875,
+          "denominator": 20480,
+          "numerator": 63
+        },
+        "deliveries": 1448,
+        "family": "fixed",
+        "institutional_replacements": 252,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.01767578125,
+          "denominator": 10240,
+          "numerator": 181
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00084228515625,
+          "denominator": 81920,
+          "numerator": 69
+        },
+        "deliveries": 1233,
+        "family": "fixed",
+        "institutional_replacements": 69,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.01505126953125,
+          "denominator": 81920,
+          "numerator": 1233
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00146484375,
+          "denominator": 2048,
+          "numerator": 3
+        },
+        "deliveries": 1091,
+        "family": "lagrangian",
+        "institutional_replacements": 120,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.01331787109375,
+          "denominator": 81920,
+          "numerator": 1091
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.00948486328125,
+          "denominator": 81920,
+          "numerator": 777
+        },
+        "deliveries": 1485,
+        "family": "lagrangian",
+        "institutional_replacements": 777,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.01812744140625,
+          "denominator": 16384,
+          "numerator": 297
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2104,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.02568359375,
+          "denominator": 10240,
+          "numerator": 263
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2043,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62013,
+        "utility": {
+          "decimal": 0.02493896484375,
+          "denominator": 81920,
+          "numerator": 2043
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00560302734375,
+          "denominator": 81920,
+          "numerator": 459
+        },
+        "deliveries": 1417,
+        "family": "direct",
+        "institutional_replacements": 459,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.01729736328125,
+          "denominator": 81920,
+          "numerator": 1417
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00120849609375,
+          "denominator": 81920,
+          "numerator": 99
+        },
+        "deliveries": 1324,
+        "family": "direct",
+        "institutional_replacements": 99,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.016162109375,
+          "denominator": 20480,
+          "numerator": 331
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0026123046875,
+          "denominator": 40960,
+          "numerator": 107
+        },
+        "deliveries": 1474,
+        "family": "fixed",
+        "institutional_replacements": 214,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.0179931640625,
+          "denominator": 40960,
+          "numerator": 737
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00074462890625,
+          "denominator": 81920,
+          "numerator": 61
+        },
+        "deliveries": 1272,
+        "family": "fixed",
+        "institutional_replacements": 61,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.01552734375,
+          "denominator": 10240,
+          "numerator": 159
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0013671875,
+          "denominator": 5120,
+          "numerator": 7
+        },
+        "deliveries": 1080,
+        "family": "lagrangian",
+        "institutional_replacements": 112,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.01318359375,
+          "denominator": 2048,
+          "numerator": 27
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.00911865234375,
+          "denominator": 81920,
+          "numerator": 747
+        },
+        "deliveries": 1332,
+        "family": "lagrangian",
+        "institutional_replacements": 747,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.016259765625,
+          "denominator": 20480,
+          "numerator": 333
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2060,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.025146484375,
+          "denominator": 4096,
+          "numerator": 103
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 1976,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62014,
+        "utility": {
+          "decimal": 0.02412109375,
+          "denominator": 10240,
+          "numerator": 247
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.0037353515625,
+          "denominator": 40960,
+          "numerator": 153
+        },
+        "deliveries": 1374,
+        "family": "direct",
+        "institutional_replacements": 306,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.0167724609375,
+          "denominator": 40960,
+          "numerator": 687
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0009521484375,
+          "denominator": 40960,
+          "numerator": 39
+        },
+        "deliveries": 1382,
+        "family": "direct",
+        "institutional_replacements": 78,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.0168701171875,
+          "denominator": 40960,
+          "numerator": 691
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.00399169921875,
+          "denominator": 81920,
+          "numerator": 327
+        },
+        "deliveries": 1544,
+        "family": "fixed",
+        "institutional_replacements": 327,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.01884765625,
+          "denominator": 10240,
+          "numerator": 193
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00081787109375,
+          "denominator": 81920,
+          "numerator": 67
+        },
+        "deliveries": 1226,
+        "family": "fixed",
+        "institutional_replacements": 67,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.0149658203125,
+          "denominator": 40960,
+          "numerator": 613
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00147705078125,
+          "denominator": 81920,
+          "numerator": 121
+        },
+        "deliveries": 1202,
+        "family": "lagrangian",
+        "institutional_replacements": 121,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.0146728515625,
+          "denominator": 40960,
+          "numerator": 601
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.0065673828125,
+          "denominator": 40960,
+          "numerator": 269
+        },
+        "deliveries": 1338,
+        "family": "lagrangian",
+        "institutional_replacements": 538,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.0163330078125,
+          "denominator": 40960,
+          "numerator": 669
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2100,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.025634765625,
+          "denominator": 4096,
+          "numerator": 105
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2136,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62015,
+        "utility": {
+          "decimal": 0.02607421875,
+          "denominator": 10240,
+          "numerator": 267
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.0044677734375,
+          "denominator": 40960,
+          "numerator": 183
+        },
+        "deliveries": 1397,
+        "family": "direct",
+        "institutional_replacements": 366,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.01705322265625,
+          "denominator": 81920,
+          "numerator": 1397
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00133056640625,
+          "denominator": 81920,
+          "numerator": 109
+        },
+        "deliveries": 1443,
+        "family": "direct",
+        "institutional_replacements": 109,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.01761474609375,
+          "denominator": 81920,
+          "numerator": 1443
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0030517578125,
+          "denominator": 8192,
+          "numerator": 25
+        },
+        "deliveries": 1514,
+        "family": "fixed",
+        "institutional_replacements": 250,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.0184814453125,
+          "denominator": 40960,
+          "numerator": 757
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00101318359375,
+          "denominator": 81920,
+          "numerator": 83
+        },
+        "deliveries": 1237,
+        "family": "fixed",
+        "institutional_replacements": 83,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.01510009765625,
+          "denominator": 81920,
+          "numerator": 1237
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00157470703125,
+          "denominator": 81920,
+          "numerator": 129
+        },
+        "deliveries": 1210,
+        "family": "lagrangian",
+        "institutional_replacements": 129,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.0147705078125,
+          "denominator": 8192,
+          "numerator": 121
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01361083984375,
+          "denominator": 16384,
+          "numerator": 223
+        },
+        "deliveries": 1443,
+        "family": "lagrangian",
+        "institutional_replacements": 1115,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.01761474609375,
+          "denominator": 81920,
+          "numerator": 1443
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2100,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.025634765625,
+          "denominator": 4096,
+          "numerator": 105
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2026,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62016,
+        "utility": {
+          "decimal": 0.0247314453125,
+          "denominator": 40960,
+          "numerator": 1013
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.003564453125,
+          "denominator": 20480,
+          "numerator": 73
+        },
+        "deliveries": 1413,
+        "family": "direct",
+        "institutional_replacements": 292,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.01724853515625,
+          "denominator": 81920,
+          "numerator": 1413
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00076904296875,
+          "denominator": 81920,
+          "numerator": 63
+        },
+        "deliveries": 1237,
+        "family": "direct",
+        "institutional_replacements": 63,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.01510009765625,
+          "denominator": 81920,
+          "numerator": 1237
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.002685546875,
+          "denominator": 4096,
+          "numerator": 11
+        },
+        "deliveries": 1409,
+        "family": "fixed",
+        "institutional_replacements": 220,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.01719970703125,
+          "denominator": 81920,
+          "numerator": 1409
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00126953125,
+          "denominator": 10240,
+          "numerator": 13
+        },
+        "deliveries": 1434,
+        "family": "fixed",
+        "institutional_replacements": 104,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.0175048828125,
+          "denominator": 40960,
+          "numerator": 717
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0016357421875,
+          "denominator": 40960,
+          "numerator": 67
+        },
+        "deliveries": 1221,
+        "family": "lagrangian",
+        "institutional_replacements": 134,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.01490478515625,
+          "denominator": 81920,
+          "numerator": 1221
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01002197265625,
+          "denominator": 81920,
+          "numerator": 821
+        },
+        "deliveries": 1312,
+        "family": "lagrangian",
+        "institutional_replacements": 821,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.016015625,
+          "denominator": 2560,
+          "numerator": 41
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2075,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.02532958984375,
+          "denominator": 16384,
+          "numerator": 415
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2112,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62017,
+        "utility": {
+          "decimal": 0.02578125,
+          "denominator": 1280,
+          "numerator": 33
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00496826171875,
+          "denominator": 81920,
+          "numerator": 407
+        },
+        "deliveries": 1456,
+        "family": "direct",
+        "institutional_replacements": 407,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.0177734375,
+          "denominator": 5120,
+          "numerator": 91
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.00115966796875,
+          "denominator": 16384,
+          "numerator": 19
+        },
+        "deliveries": 1383,
+        "family": "direct",
+        "institutional_replacements": 95,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.01688232421875,
+          "denominator": 81920,
+          "numerator": 1383
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.0031494140625,
+          "denominator": 40960,
+          "numerator": 129
+        },
+        "deliveries": 1420,
+        "family": "fixed",
+        "institutional_replacements": 258,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.017333984375,
+          "denominator": 4096,
+          "numerator": 71
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00096435546875,
+          "denominator": 81920,
+          "numerator": 79
+        },
+        "deliveries": 1239,
+        "family": "fixed",
+        "institutional_replacements": 79,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.01512451171875,
+          "denominator": 81920,
+          "numerator": 1239
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00140380859375,
+          "denominator": 16384,
+          "numerator": 23
+        },
+        "deliveries": 1188,
+        "family": "lagrangian",
+        "institutional_replacements": 115,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.014501953125,
+          "denominator": 20480,
+          "numerator": 297
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.01173095703125,
+          "denominator": 81920,
+          "numerator": 961
+        },
+        "deliveries": 1488,
+        "family": "lagrangian",
+        "institutional_replacements": 961,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.0181640625,
+          "denominator": 5120,
+          "numerator": 93
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2087,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.02547607421875,
+          "denominator": 81920,
+          "numerator": 2087
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2078,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62018,
+        "utility": {
+          "decimal": 0.0253662109375,
+          "denominator": 40960,
+          "numerator": 1039
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00546875,
+          "denominator": 1280,
+          "numerator": 7
+        },
+        "deliveries": 1544,
+        "family": "direct",
+        "institutional_replacements": 448,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.01884765625,
+          "denominator": 10240,
+          "numerator": 193
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0009765625,
+          "denominator": 1024,
+          "numerator": 1
+        },
+        "deliveries": 1425,
+        "family": "direct",
+        "institutional_replacements": 80,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.01739501953125,
+          "denominator": 16384,
+          "numerator": 285
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.00264892578125,
+          "denominator": 81920,
+          "numerator": 217
+        },
+        "deliveries": 1386,
+        "family": "fixed",
+        "institutional_replacements": 217,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.0169189453125,
+          "denominator": 40960,
+          "numerator": 693
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00137939453125,
+          "denominator": 81920,
+          "numerator": 113
+        },
+        "deliveries": 1384,
+        "family": "fixed",
+        "institutional_replacements": 113,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.01689453125,
+          "denominator": 10240,
+          "numerator": 173
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.0010986328125,
+          "denominator": 8192,
+          "numerator": 9
+        },
+        "deliveries": 946,
+        "family": "lagrangian",
+        "institutional_replacements": 90,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.0115478515625,
+          "denominator": 40960,
+          "numerator": 473
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.00633544921875,
+          "denominator": 81920,
+          "numerator": 519
+        },
+        "deliveries": 1472,
+        "family": "lagrangian",
+        "institutional_replacements": 519,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.01796875,
+          "denominator": 1280,
+          "numerator": 23
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2062,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.0251708984375,
+          "denominator": 40960,
+          "numerator": 1031
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2125,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62019,
+        "utility": {
+          "decimal": 0.02593994140625,
+          "denominator": 16384,
+          "numerator": 425
+        }
+      },
+      {
+        "candidate_id": "direct_02",
+        "cost": {
+          "decimal": 0.00626220703125,
+          "denominator": 81920,
+          "numerator": 513
+        },
+        "deliveries": 1331,
+        "family": "direct",
+        "institutional_replacements": 513,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.01624755859375,
+          "denominator": 81920,
+          "numerator": 1331
+        }
+      },
+      {
+        "candidate_id": "direct_11",
+        "cost": {
+          "decimal": 0.0010986328125,
+          "denominator": 8192,
+          "numerator": 9
+        },
+        "deliveries": 1303,
+        "family": "direct",
+        "institutional_replacements": 90,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.01590576171875,
+          "denominator": 81920,
+          "numerator": 1303
+        }
+      },
+      {
+        "candidate_id": "fixed_05",
+        "cost": {
+          "decimal": 0.00311279296875,
+          "denominator": 16384,
+          "numerator": 51
+        },
+        "deliveries": 1351,
+        "family": "fixed",
+        "institutional_replacements": 255,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.01649169921875,
+          "denominator": 81920,
+          "numerator": 1351
+        }
+      },
+      {
+        "candidate_id": "fixed_10",
+        "cost": {
+          "decimal": 0.00093994140625,
+          "denominator": 81920,
+          "numerator": 77
+        },
+        "deliveries": 1257,
+        "family": "fixed",
+        "institutional_replacements": 77,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.01534423828125,
+          "denominator": 81920,
+          "numerator": 1257
+        }
+      },
+      {
+        "candidate_id": "lagrangian_03",
+        "cost": {
+          "decimal": 0.00196533203125,
+          "denominator": 81920,
+          "numerator": 161
+        },
+        "deliveries": 1249,
+        "family": "lagrangian",
+        "institutional_replacements": 161,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.01524658203125,
+          "denominator": 81920,
+          "numerator": 1249
+        }
+      },
+      {
+        "candidate_id": "lagrangian_11",
+        "cost": {
+          "decimal": 0.00899658203125,
+          "denominator": 81920,
+          "numerator": 737
+        },
+        "deliveries": 1374,
+        "family": "lagrangian",
+        "institutional_replacements": 737,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.0167724609375,
+          "denominator": 40960,
+          "numerator": 687
+        }
+      },
+      {
+        "candidate_id": "shieldaware_00",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 2020,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.024658203125,
+          "denominator": 4096,
+          "numerator": 101
+        }
+      },
+      {
+        "candidate_id": "shieldaware_04",
+        "cost": {
+          "decimal": 0.0,
+          "denominator": 1,
+          "numerator": 0
+        },
+        "deliveries": 1983,
+        "family": "shieldaware",
+        "institutional_replacements": 0,
+        "joint_steps": 20480,
+        "n_agents": 4,
+        "training_seed": 62020,
+        "utility": {
+          "decimal": 0.02420654296875,
+          "denominator": 81920,
+          "numerator": 1983
+        }
+      }
+    ],
+    "selected_candidate_ids": [
+      "fixed_05",
+      "fixed_10",
+      "direct_02",
+      "direct_11",
+      "lagrangian_03",
+      "lagrangian_11",
+      "shieldaware_00",
+      "shieldaware_04"
+    ]
+  },
+  "family_complete": false,
+  "implementation": {
+    "analysis_runtime_versions": {
+      "numpy": "2.3.5",
+      "python": "3.12.14",
+      "scipy": "1.17.0"
+    },
+    "implementation_lock_sha256": "bdf2b4e9923e51db8172742b6c08b609453cefd890e2173f79effb2448ac5140",
+    "runtime_sources": {
+      "confirmation_analysis.py": "bd1efb92903686afb51e91cfca253c7d5bbbe1438a815c81bf6e0def509424ae",
+      "learning_receipts.py": "569663b27e0f1774e5a85075e9e539696f0dccfd58ed355672df33ee62b1764b"
+    }
+  },
+  "interpretation": "Raw tests and pointwise intervals are provisional/descriptive; no completed familywise inference.",
+  "original_result_packet_sha256": "18c9806422960b408580bcf40982ad24608410641da48a3f85174d95fc78c56f",
+  "pending_contrasts": [
+    "RWARE Direct minus Fixed",
+    "RWARE Direct minus Lagrangian",
+    "RWARE Direct minus shield-aware",
+    "Warehouse execution Direct minus Fixed below capacity",
+    "Warehouse execution Direct minus Lagrangian below capacity",
+    "Warehouse execution Direct minus shield-aware below capacity",
+    "Warehouse execution Direct minus Fixed overload",
+    "Warehouse execution Direct minus Lagrangian overload",
+    "Warehouse execution Direct minus shield-aware overload"
+  ],
+  "projection_scope": "Exact original endpoints, contrasts and analysis bindings; original receipt/path provenance omitted. This projection is not the original source-bound result packet. Hash identity does not establish data origin or replay the retained models/traces.",
+  "protocol_sha256": "9bba352fa2c4f05db70a666e716e99d452981b2406831f237c3be6eef934dff3",
+  "recipe_id": "PCI-M3-CONFIRMATION-ANALYSIS-20261106-v1",
+  "recipe_sha256": "828f5e668876bd49569d635fff76f73d70630bbfd4e76309cca642ea42542328",
+  "schema": "PCI-PUBLIC-CONFIRMATION-PROJECTION-v1",
+  "source_map_sha256": "e7fbf20f649ce40a21d42d644756cf519dd6fd2717564c5bbcf0eb0793473ed7",
+  "status": "DESCRIPTIVE_PARTIAL_FAMILY"
+}
