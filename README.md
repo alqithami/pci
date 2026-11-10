@@ -4,6 +4,21 @@ Research code for **institutional specification, operational admission, and inte
 
 An institution declares the rules; a policy proposes an action; a common monitor can correct it; a certificate establishes the encoded relation for the expected admitted action. Low compatibility loss is not a safety certificate, and successful verification is not evidence of superior coordination or general trajectory confidentiality.
 
+## Proof-work accounting controls — 11 November 2026
+
+A separate generic counter now distinguishes valid generated proofs from
+distinct durably applied attempts and valid unused proofs. It keeps pre-proof
+rejections, exact retries, failed calls and in-flight calls separate. Closed
+accounting requires a complete drain and retained artifact/audit bindings.
+
+- [Counter, schema, trust premises and 37 synthetic controls](analysis/proof_work_accounting_20261111/)
+
+Run `python3 -B analysis/proof_work_accounting_20261111/run_qualification.py`.
+These controls exercise counting and byte bindings; they do not generate or
+verify genuine proofs and report no policy-dependent savings. A real corpus
+requires a separately executed trusted actual-key/native audit and complete
+consumer history. No private operational evidence is included.
+
 ## Prospective estimator mechanism study — 9 November 2026
 
 The separate estimator analysis is now frozen and software-qualified before new
